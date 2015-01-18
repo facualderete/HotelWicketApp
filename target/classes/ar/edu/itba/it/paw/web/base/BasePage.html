@@ -1,0 +1,32 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+    <head>
+        <title>Hotel App</title>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/bootstrap/css/bootstrap.css" />
+        <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/pictures.css" />
+
+    </head>
+    <body>
+        <div class="row">
+            <div class="container">
+                <div class="navbar">
+                    <div class="navbar-inner">
+                        <div class="navbar-form pull-left">
+                            <button wicket:id="home" class="btn btn-primary">Home</button>&nbsp;&nbsp;
+                            <button wicket:id="login" class="btn btn-primary">Login</button>
+                            <button wicket:id="register" class="btn btn-primary">Register</button>
+                            <a wicket:id="profile">user</a></span>
+                            <button wicket:id="logout" class="btn btn-primary pull-right">Logout</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <wicket:child />
+
+    </body>
+</html>

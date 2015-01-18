@@ -8,7 +8,6 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 public class HomeRedirectServlet extends HttpServlet{
-
     private static final String HOME_URL_PARAM = "homeUrl";
 
     @Override

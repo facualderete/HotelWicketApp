@@ -55,7 +55,7 @@ public class BasePage extends WebPage{
             }
         };
 
-        Label user = new Label("user", session.getUsername());
+        Label user = new Label("user", session.getUserEmail());
 
         add(home);
         add(login);

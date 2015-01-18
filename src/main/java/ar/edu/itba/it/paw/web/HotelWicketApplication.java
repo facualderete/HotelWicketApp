@@ -1,7 +1,7 @@
 package ar.edu.itba.it.paw.web;
 
 import ar.edu.itba.it.paw.web.common.HibernateRequestCycleListener;
-import ar.edu.itba.it.paw.web.user.LoginPage;
+import ar.edu.itba.it.paw.web.hotel.ListPage;
 import org.apache.wicket.Page;
 import org.apache.wicket.Session;
 import org.apache.wicket.protocol.http.WebApplication;
@@ -26,8 +26,7 @@ public class HotelWicketApplication extends WebApplication{
 
     @Override
     public Class<? extends Page> getHomePage() {
-        //TODO: cambiar esto por la que sea la pagina principal (5 mejores hoteles?)
-        return LoginPage.class;
+        return ListPage.class;
     }
 
     @Override
