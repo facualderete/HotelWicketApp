@@ -1,0 +1,102 @@
+<wicket:extend>
+
+<h2><span wicket:id="hotelNameTitle"></span></h2>
+
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th wicket:message key="header_category">Categoría</th>
+        <th wicket:message key="header_type">Tipo</th>
+        <th wicket:message key="header_price">Precio</th>
+        <th wicket:message key="header_city">Ciudad</th>
+        <th wicket:message key="header_address">Dirección</th>
+        <th wicket:message key="header_phone">Teléfono</th>
+        <th wicket:message key="header_website">Sitio Web</th>
+        <th wicket:message key="header_breakfast">Desayuno</th>
+        <th wicket:message key="header_views">Cantidad de consultas</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td><span wicket:id="hotelCategory"></span></td>
+        <td><span wicket:id="hotelType"></span></td>
+        <td><span wicket:id="hotelPrice"></span></td>
+        <td><span wicket:id="hotelCity"></span></td>
+        <td><span wicket:id="hotelAddress"></span></td>
+        <td><span wicket:id="hotelPhone"></span></td>
+        <td><span wicket:id="hotelWebsite"></span></td>
+        <td><span wicket:id="hotelBreakfast"></span></td>
+        <td><span wicket:id="hotelViews"></span></td>
+    </tr>
+    </tbody>
+</table>
+
+<h3><wicket:message key="title_reviews">Evaluación</wicket:message></h3>
+
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th><wicket:message key="header_hygiene">Higiene</wicket:message></th>
+        <th><wicket:message key="header_facilities">Instalaciones</wicket:message></th>
+        <th><wicket:message key="header_service">Servicios</wicket:message></th>
+        <th><wicket:message key="header_location">Ubicación</wicket:message></th>
+        <th><wicket:message key="header_price">Precio</wicket:message></th>
+        <th><wicket:message key="header_comfort">Confort para el descanso</wicket:message></th>
+        <th><wicket:message key="header_general">General</wicket:message></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td><span wicket:id="hygieneEvaluation"></span></td>
+        <td><span wicket:id="facilitiesEvaluation"></span></td>
+        <td><span wicket:id="serviceEvaluation"></span></td>
+        <td><span wicket:id="locationEvaluation"></span></td>
+        <td><span wicket:id="priceEvaluation"></span></td>
+        <td><span wicket:id="comfortEvaluation"></span></td>
+        <td><span wicket:id="generalEvaluation"></span></td>
+    </tr>
+    </tbody>
+</table>
+
+    <h3><span wicket:id="commentsTitle"></span></h3>
+    <h3><span wicket:id="noCommentsTitle"></span></h3>
+
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th><wicket:message key="header_from">Higiene</wicket:message></th>
+            <th><wicket:message key="header_to">Higiene</wicket:message></th>
+            <th><wicket:message key="header_comment_date">Higiene</wicket:message></th>
+            <th><wicket:message key="header_reason">Higiene</wicket:message></th>
+            <th><wicket:message key="header_companions">Higiene</wicket:message></th>
+            <th><wicket:message key="header_details">Higiene</wicket:message></th>
+            <th><wicket:message key="header_hygiene">Higiene</wicket:message></th>
+            <th><wicket:message key="header_facilities">Instalaciones</wicket:message></th>
+            <th><wicket:message key="header_service">Servicios</wicket:message></th>
+            <th><wicket:message key="header_location">Ubicación</wicket:message></th>
+            <th><wicket:message key="header_price">Precio</wicket:message></th>
+            <th><wicket:message key="header_comfort">Confort para el descanso</wicket:message></th>
+            <th><wicket:message key="header_general">General</wicket:message></th>
+            <th><wicket:message key="header_user_name">Usuario</wicket:message></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr wicket:id="commentsList">
+            <td><span wicket:id="fromDate"></span></td>
+            <td><span wicket:id="toDate"></span></td>
+            <td><span wicket:id="commentDate"></span></td>
+            <td><span wicket:id="reason"></span></td>
+            <td><span wicket:id="companions"></span></td>
+            <td><span wicket:id="details"></span></td>
+            <td><span wicket:id="hygiene"></span></td>
+            <td><span wicket:id="facilities"></span></td>
+            <td><span wicket:id="service"></span></td>
+            <td><span wicket:id="location"></span></td>
+            <td><span wicket:id="price"></span></td>
+            <td><span wicket:id="comfort"></span></td>
+            <td><span wicket:id="general"></span></td>
+            <td><span wicket:id="user"></span></td>
+        </tr>
+        </tbody>
+    </table>
+</wicket:extend>
