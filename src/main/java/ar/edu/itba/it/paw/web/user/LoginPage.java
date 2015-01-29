@@ -1,16 +1,13 @@
 package ar.edu.itba.it.paw.web.user;
 
-import ar.edu.itba.it.paw.domain.User;
 import ar.edu.itba.it.paw.domain.UserRepo;
 import ar.edu.itba.it.paw.web.HotelWicketSession;
 import ar.edu.itba.it.paw.web.base.BasePage;
-import org.apache.wicket.markup.html.form.Button;
 import org.apache.wicket.markup.html.form.Form;
 import org.apache.wicket.markup.html.form.PasswordTextField;
 import org.apache.wicket.markup.html.form.TextField;
 import org.apache.wicket.markup.html.panel.FeedbackPanel;
-import org.apache.wicket.model.CompoundPropertyModel;
-import org.apache.wicket.model.ResourceModel;
+import org.apache.wicket.request.mapper.parameter.PageParameters;
 import org.apache.wicket.spring.injection.annot.SpringBean;
 
 public class LoginPage extends BasePage {
@@ -20,38 +17,33 @@ public class LoginPage extends BasePage {
     @SpringBean
     private UserRepo users;
 
-    private transient String username;
-    private transient String password;
-    private transient boolean rememberMe;
-
     public LoginPage() {
 
-        add(new FeedbackPanel("errorPanel"));
-        Form<LoginPage> form = new Form<LoginPage>("loginForm",
-                new CompoundPropertyModel<LoginPage>(this)) {
+        final TextField<String> emailField = new TextField<String>("email");
+        final PasswordTextField passwordField = new PasswordTextField("password");
 
-            private static final long serialVersionUID = 1L;
+        if (((HotelWicketSession) getSession()).isSignedIn()) {
+            HotelWicketSession session = HotelWicketSession.get();
+            setResponsePage(new ProfilePage(new PageParameters().set("username", users.getByEmail(session.getUserEmail()).getEmail())));
+        }
+
+        add(new FeedbackPanel("errorPanel"));
+
+        Form<?> form = new Form<Void>("loginForm") {
 
             @Override
             protected void onSubmit() {
-                HotelWicketSession session = HotelWicketSession.get();
+                final String emailValue = emailField.getModelObject();
+                final String passwordValue = passwordField.getModelObject();
+//                PageParameters pageParameters = new PageParameters();
+//                pageParameters.add("username", usernameValue);
+//                setResponsePage(SuccessPage.class, pageParameters);
 
-                if (session.signIn(username, password)) {
-                    User loggedUser = users.getByEmail(session.getUserEmail());
-                    continueToOriginalDestination();
-
-                    //TODO: hacer la página del perfil de usuario!!
-//                    setResponsePage(new ProfilePage(new PageParameters().set(
-//                            "userEmail", loggedUser.getEmail())));
-                } else {
-                    error(getString("invalidCredentials"));
-                }
             }
         };
 
-        form.add(new TextField<String>("email").setRequired(true));
-        form.add(new PasswordTextField("password"));
-        form.add(new Button("login", new ResourceModel("login")));
+        form.add(emailField);
+        form.add(passwordField);
         add(form);
     }
 
