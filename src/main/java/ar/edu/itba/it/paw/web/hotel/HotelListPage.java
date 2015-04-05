@@ -3,6 +3,7 @@ package ar.edu.itba.it.paw.web.hotel;
 import ar.edu.itba.it.paw.domain.Destination;
 import ar.edu.itba.it.paw.domain.Hotel;
 import ar.edu.itba.it.paw.domain.HotelRepo;
+import ar.edu.itba.it.paw.domain.UserRepo;
 import ar.edu.itba.it.paw.web.HotelWicketSession;
 import ar.edu.itba.it.paw.web.base.BasePage;
 import org.apache.wicket.markup.html.basic.Label;
@@ -21,15 +22,18 @@ public class HotelListPage extends BasePage{
     private static final int LIST_SIZE = 5;
 
     private static final long serialVersionUID = 1L;
+
     @SpringBean
     private HotelRepo hotelRepo;
+    @SpringBean
+    private UserRepo userRepo;
 
     public HotelListPage(){
 
         final IModel<List<Hotel>> hotelsListModel = new LoadableDetachableModel<List<Hotel>>() {
             @Override
             protected List<Hotel> load() {
-                return (List<Hotel>)hotelRepo.getNHotelsOrderedByComments(LIST_SIZE, HotelWicketSession.get().isAdmin());
+                return (List<Hotel>)hotelRepo.getNHotelsOrderedByComments(LIST_SIZE, HotelWicketSession.get().isAdmin(userRepo));
             }
         };
 

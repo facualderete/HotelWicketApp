@@ -55,7 +55,7 @@ public class HotelDetailPage extends BasePage{
         add(commentsLabel);
         commentsLabel.setVisible(false);
 
-        //TODO: esto es una villereada... Sólo para salir del paso por ahora!
+        //TODO: esto es una villereada... Sólo para salir del paso por ahora! Hay que hacer models de los Comments
         SortedSet<Comment> comments = (SortedSet<Comment>)hotelRepo.getCommentsOnHotel(hotel);
         final LinkedList<Comment> commentsList = new LinkedList<Comment>();
         for(Comment c : comments){

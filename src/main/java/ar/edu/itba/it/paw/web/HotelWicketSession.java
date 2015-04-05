@@ -1,18 +1,18 @@
 package ar.edu.itba.it.paw.web;
 
+import ar.edu.itba.it.paw.domain.EntityModel;
 import ar.edu.itba.it.paw.domain.User;
 import ar.edu.itba.it.paw.domain.UserRepo;
 import org.apache.wicket.Session;
+import org.apache.wicket.model.IModel;
 import org.apache.wicket.protocol.http.WebSession;
 import org.apache.wicket.request.Request;
-import org.apache.wicket.spring.injection.annot.SpringBean;
 
 public class HotelWicketSession extends WebSession {
 
-    @SpringBean
-    private UserRepo users;
-
     private String userEmail;
+
+    private IModel<User> user;
 
     public static HotelWicketSession get() {
         return (HotelWicketSession) Session.get();
@@ -26,10 +26,17 @@ public class HotelWicketSession extends WebSession {
         return userEmail;
     }
 
-    public boolean signIn(String userEmail, String password) {
-        User user = users.getByEmail(userEmail);
-        if (user != null && user.getPassword().equals(password)) {
-            this.userEmail = userEmail;
+    public User getUser() {
+        return (user != null) ? user.getObject() : null;
+    }
+
+    public boolean signIn(String email, String password, UserRepo users) {
+        if (this.userEmail != null)
+            return true;
+        User user = users.getByEmail(email);
+        if (user != null && user.checkPassword(password)) {
+            this.userEmail = email;
+            this.user = new EntityModel<User>(User.class, user);
             return true;
         }
         return false;
@@ -44,7 +51,14 @@ public class HotelWicketSession extends WebSession {
         clear();
     }
 
-    public boolean isAdmin(){
+    public boolean isAdmin(UserRepo users){
         return isSignedIn() && users.getByEmail(userEmail).getAdmin();
+    }
+
+    @Override
+    public void detach() {
+        super.detach();
+        if (user != null)
+            user.detach();
     }
 }

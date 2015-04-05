@@ -3,6 +3,7 @@ package ar.edu.itba.it.paw.web.base;
 import ar.edu.itba.it.paw.domain.UserRepo;
 import ar.edu.itba.it.paw.web.HotelWicketSession;
 import ar.edu.itba.it.paw.web.user.LoginPage;
+import ar.edu.itba.it.paw.web.user.RegisterPage;
 import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.markup.html.basic.Label;
 import org.apache.wicket.markup.html.link.Link;
@@ -32,7 +33,7 @@ public class BasePage extends WebPage {
 
             @Override
             public void onClick() {
-                //setResponsePage(RegisterPage.class);      //TODO: hacer la página de registro!!
+                setResponsePage(RegisterPage.class);
             }
         };
 

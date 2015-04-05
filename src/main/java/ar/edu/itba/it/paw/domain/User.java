@@ -155,4 +155,8 @@ public class User extends PersistentEntity{
     public void addComment(Comment comment){
         comments.add(comment);
     }
+
+    public boolean checkPassword(String password) {
+        return this.password.equals(password);
+    }
 }
