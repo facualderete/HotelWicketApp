@@ -7,6 +7,8 @@ import org.apache.wicket.Session;
 import org.apache.wicket.protocol.http.WebApplication;
 import org.apache.wicket.request.Request;
 import org.apache.wicket.request.Response;
+import org.apache.wicket.request.resource.PackageResourceReference;
+import org.apache.wicket.request.resource.ResourceReference;
 import org.apache.wicket.spring.injection.annot.SpringComponentInjector;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,6 +25,8 @@ import org.springframework.stereotype.Component;
 public class WicketApplication extends WebApplication {
 
 	private final SessionFactory sessionFactory;
+
+	public static final ResourceReference DEFAULT_PROFILE_IMAGE = new PackageResourceReference(WicketApplication.class, "resources/default_user_picture.png");
 
 	@Autowired
 	public WicketApplication(SessionFactory sessionFactory) {

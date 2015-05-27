@@ -41,7 +41,7 @@ public class LoginPage extends BasePage {
                 if (user != null && user.getPassword().equals(password)) {
                     HotelWicketSession session = HotelWicketSession.get();
                     session.signIn(user.getEmail(), user.getPassword(), users);
-                    setResponsePage(new ProfilePage(new PageParameters().set("username", users.getByEmail(session.getUserEmail()).getEmail())));
+                    setResponsePage(new ProfilePage(new PageParameters().set("userEmail", user.getEmail())));
                 } else {
                     error(getString("invalidCredentials"));
                 }

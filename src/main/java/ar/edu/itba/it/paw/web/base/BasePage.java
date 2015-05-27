@@ -1,11 +1,15 @@
 package ar.edu.itba.it.paw.web.base;
 
+import ar.edu.itba.it.paw.common.PictureHelper;
+import ar.edu.itba.it.paw.domain.User;
 import ar.edu.itba.it.paw.domain.UserRepo;
 import ar.edu.itba.it.paw.web.HotelWicketSession;
+import ar.edu.itba.it.paw.web.WicketApplication;
 import ar.edu.itba.it.paw.web.user.LoginPage;
 import ar.edu.itba.it.paw.web.user.RegisterPage;
 import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.markup.html.basic.Label;
+import org.apache.wicket.markup.html.image.Image;
 import org.apache.wicket.markup.html.link.Link;
 import org.apache.wicket.spring.injection.annot.SpringBean;
 
@@ -56,21 +60,28 @@ public class BasePage extends WebPage {
             }
         };
 
-        Label user = new Label("user", session.getUserEmail());
+        Label userLabel = new Label("user", session.getUserEmail());
 
         add(home);
         add(login);
         add(logout);
-        add(user);
+        add(userLabel);
         add(register);
+
+        Image profilePicture = new Image("profilePictureHeader", WicketApplication.DEFAULT_PROFILE_IMAGE);
+        profilePicture.setVisible(false);
+        add(profilePicture);
 
         if(session.isSignedIn()) {
             login.setVisible(false);
             register.setVisible(false);
+            User user = users.getByEmail(session.getUserEmail());
+            profilePicture.setImageResourceReference(PictureHelper.getProfilePicture(user, "1"));
+            profilePicture.setVisible(true);
+            add(profilePicture);
         }else{
             logout.setVisible(false);
-            user.setVisible(false);
-
+            userLabel.setVisible(false);
         }
     }
 }
