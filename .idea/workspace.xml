@@ -2,33 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76570d69-18b7-4088-aaff-eb10cce1879a" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/base/BasePage.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelDetailPage.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelListPage.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/user/LoginPage.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/user/ProfilePage.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/user/RegisterPage.properties" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/base/BasePage.properties" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/base/BasePage.utf8.properties" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelDetailPage.properties" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelDetailPage.utf8.properties" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelListPage.properties" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelListPage.utf8.properties" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/user/LoginPage.properties" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/user/LoginPage.utf8.properties" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/user/ProfilePage.properties" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/user/ProfilePage.utf8.properties" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/user/RegisterPage.properties" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/user/RegisterPage.utf8.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/HomePage.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/HomePage.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelDetailPage$3.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/comment/CommentFormPage$3.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/comment/CommentFormPage$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/comment/CommentFormPage.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/comment/CommentFormPage.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelDetailPage$1.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelDetailPage$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelDetailPage$2.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelDetailPage$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelDetailPage.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelDetailPage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/user/LoginPage$1.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/user/LoginPage$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/user/LoginPage.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/user/LoginPage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/WicketApplication.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/WicketApplication.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/base/BasePage.html" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/base/BasePage.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/base/BasePage.html" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/base/BasePage.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/HomePage.java" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/HomePage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/user/ProfilePage.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/user/ProfilePage.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/comment/CommentListPanel.java" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/comment/CommentListPanel.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelDetailPage.html" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelDetailPage.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelDetailPage.html" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelDetailPage.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelDetailPage.java" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelDetailPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/user/LoginPage.java" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/user/LoginPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/WicketApplication.java" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/WicketApplication.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/user/ProfilePage.html" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/user/ProfilePage.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/user/ProfilePage.html" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/user/ProfilePage.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/user/ProfilePage.java" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/user/ProfilePage.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="HotelApp.iws" />
@@ -59,29 +46,54 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="HotelDetailPage.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelDetailPage.java">
+      <file leaf-file-name="HotelListPage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelListPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.62278104" vertical-offset="419" max-vertical-offset="1785">
-              <caret line="71" column="56" selection-start-line="71" selection-start-column="56" selection-end-line="71" selection-end-column="56" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="223" max-vertical-offset="1020">
+              <caret line="44" column="69" selection-start-line="44" selection-start-column="69" selection-end-line="44" selection-end-column="69" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HotelListPage.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelListPage.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="555">
+              <caret line="16" column="99" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="99" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CommentListPanel.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/comment/CommentListPanel.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-17.791666" vertical-offset="143" max-vertical-offset="750">
+              <caret line="38" column="77" selection-start-line="38" selection-start-column="77" selection-end-line="38" selection-end-column="77" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CommentListPanel.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/comment/CommentListPanel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.556213" vertical-offset="329" max-vertical-offset="1005">
+              <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
               <folding>
-                <element signature="e#3091#3265#0" expanded="true" />
-                <element signature="e#3264#3265#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CommentListPanel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/comment/CommentListPanel.java">
+      <file leaf-file-name="CommentListPanel.utf8.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/comment/CommentListPanel.utf8.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
-              <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#233#234#0" expanded="true" />
-                <element signature="e#265#266#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -112,12 +124,10 @@
         <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/domain/HibernateEntityResolver.java" />
         <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/user/ProfilePage.properties" />
         <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/user/RegisterPage.html" />
-        <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/user/ProfilePage.html" />
         <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/common/ImageResourceReference.java" />
         <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/common/ImageResource.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/pictures.css" />
         <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/common/PictureHelper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/user/ProfilePage.java" />
         <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/base/BasePage.java" />
         <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/comment/commentFormPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/user/RegisterPage.properties" />
@@ -128,15 +138,20 @@
         <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/user/LoginPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/user/LoginPage.html" />
         <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelDetailPage.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelDetailPage.html" />
         <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/comment/RatingEvaluationPanel.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelDetailPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/base/BasePage.html" />
         <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/comment/RatingEvaluationPanel.java" />
         <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/comment/CommentFormPage.html" />
         <option value="$PROJECT_DIR$/src/test/java/ar/edu/itba/it/paw/Start.java" />
         <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/comment/CommentFormPage.properties" />
         <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/comment/CommentFormPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/user/ProfilePage.html" />
+        <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/user/ProfilePage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/user/ProfilePage.utf8.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/comment/CommentListPanel.utf8.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelDetailPage.html" />
+        <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelDetailPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/comment/CommentListPanel.html" />
         <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/comment/CommentListPanel.java" />
       </list>
     </option>
@@ -246,6 +261,74 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hotelapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HotelWicketApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="paw" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="user" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hotelapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HotelWicketApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="paw" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hotel" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -627,7 +710,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="22" />
+      <option name="time" value="23" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -636,20 +719,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/wicket/wicket-ioc/6.18.0/wicket-ioc-6.18.0.jar!/org/apache/wicket/proxy/LazyInitProxyFactory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.6" vertical-offset="1050" max-vertical-offset="2790">
-          <caret line="105" column="22" selection-start-line="105" selection-start-column="22" selection-end-line="105" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/wicket/wicket-request/6.18.0/wicket-request-6.18.0.jar!/org/apache/wicket/request/mapper/parameter/PageParameters.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.28" vertical-offset="2963" max-vertical-offset="5835">
-          <caret line="226" column="26" selection-start-line="226" selection-start-column="26" selection-end-line="226" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/wicket/wicket-core/6.18.0/wicket-core-6.18.0.jar!/org/apache/wicket/Component.class">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.6" vertical-offset="18000" max-vertical-offset="25875">
@@ -717,20 +786,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="193" max-vertical-offset="690">
           <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/user/ProfilePage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0690184" vertical-offset="0" max-vertical-offset="652">
-          <caret line="3" column="34" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/user/ProfilePage.utf8.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.110946745" vertical-offset="0" max-vertical-offset="676">
-          <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -812,21 +867,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelListPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3360161" vertical-offset="223" max-vertical-offset="1020">
-          <caret line="44" column="69" selection-start-line="44" selection-start-column="69" selection-end-line="44" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelListPage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09513742" vertical-offset="0" max-vertical-offset="555">
-          <caret line="3" column="100" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="100" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/base/BasePage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="268" max-vertical-offset="1155">
@@ -834,20 +874,6 @@
           <folding>
             <element signature="e#1297#1298#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelDetailPage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="1650">
-          <caret line="4" column="74" selection-start-line="4" selection-start-column="74" selection-end-line="4" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelDetailPage.utf8.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="58" max-vertical-offset="585">
-          <caret line="33" column="36" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -879,14 +905,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="1200">
           <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/user/ProfilePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.57939917" vertical-offset="0" max-vertical-offset="466">
-          <caret line="26" column="44" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
           <folding />
         </state>
       </provider>
@@ -930,26 +948,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/comment/CommentFormPage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.541666" vertical-offset="398" max-vertical-offset="1440">
-          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ar/edu/itba/it/paw/Start.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="1140">
           <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/comment/RatingEvaluationPanel.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="195">
-          <caret line="3" column="49" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="49" />
           <folding />
         </state>
       </provider>
@@ -1002,25 +1004,108 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/comment/CommentListPanel.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/comment/RatingEvaluationPanel.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
-          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#233#234#0" expanded="true" />
-            <element signature="e#265#266#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="195">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/comment/CommentFormPage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5398773" vertical-offset="623" max-vertical-offset="1440">
+          <caret line="65" column="80" selection-start-line="65" selection-start-column="24" selection-end-line="65" selection-end-column="80" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelDetailPage.utf8.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelDetailPage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.21779141" vertical-offset="293" max-vertical-offset="1065">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/user/ProfilePage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5521472" vertical-offset="0" max-vertical-offset="652">
+          <caret line="24" column="44" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/user/ProfilePage.utf8.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.110946745" vertical-offset="0" max-vertical-offset="676">
+          <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/comment/CommentListPanel.utf8.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/user/ProfilePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="615">
+          <caret line="27" column="61" selection-start-line="27" selection-start-column="52" selection-end-line="27" selection-end-column="61" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelDetailPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.62278104" vertical-offset="419" max-vertical-offset="1785">
-          <caret line="71" column="56" selection-start-line="71" selection-start-column="56" selection-end-line="71" selection-end-column="56" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="299" max-vertical-offset="975">
+          <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelListPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="223" max-vertical-offset="1020">
+          <caret line="44" column="69" selection-start-line="44" selection-start-column="69" selection-end-line="44" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelListPage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="555">
+          <caret line="16" column="99" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="99" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/comment/CommentListPanel.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.791666" vertical-offset="143" max-vertical-offset="750">
+          <caret line="38" column="77" selection-start-line="38" selection-start-column="77" selection-end-line="38" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/comment/CommentListPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.556213" vertical-offset="329" max-vertical-offset="1005">
+          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
           <folding>
-            <element signature="e#3091#3265#0" expanded="true" />
-            <element signature="e#3264#3265#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
