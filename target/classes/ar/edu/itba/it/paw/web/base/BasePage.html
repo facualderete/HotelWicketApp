@@ -5,8 +5,13 @@
     <head>
         <title>Hotel App</title>
         <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css" />
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-responsive.min.css" />
         <link rel="stylesheet" type="text/css" href="css/pictures.css" />
+        <link rel="stylesheet" type="text/css" href="jquery-ui/css/ui-lightness/jquery-ui-1.10.4.custom.css">
+        <script type="text/javascript" src="jquery-ui/js/jquery-1.10.2.js"></script>
+        <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.10.4.custom.js"></script>
+        <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
 
     </head>
     <body>
@@ -31,3 +36,12 @@
 
     </body>
 </html>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $(".datepicker").datepicker({ dateFormat: "dd-mm-yy" });
+    $('.carousel').carousel({
+      interval: 2000
+    });
+  });
+</script>

@@ -41,6 +41,8 @@ public class WicketApplication extends WebApplication {
 	@Override
 	protected void init() {
 		super.init();
+		getRequestCycleSettings().setResponseRequestEncoding("UTF-8");
+		getMarkupSettings().setDefaultMarkupEncoding("UTF-8");
 		getComponentInstantiationListeners().add(new SpringComponentInjector(this));
 		getRequestCycleListeners().add(new HibernateRequestCycleListener(sessionFactory));
 	}

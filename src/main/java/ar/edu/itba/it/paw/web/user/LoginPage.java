@@ -23,9 +23,6 @@ public class LoginPage extends BasePage {
 
     public LoginPage() {
 
-        final TextField<String> emailField = new TextField<String>("email");
-        final PasswordTextField passwordField = new PasswordTextField("password");
-
         if (((HotelWicketSession) getSession()).isSignedIn()) {
             HotelWicketSession session = HotelWicketSession.get();
             setResponsePage(new ProfilePage(new PageParameters().set("username", users.getByEmail(session.getUserEmail()).getEmail())));

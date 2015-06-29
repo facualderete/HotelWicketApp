@@ -1,0 +1,91 @@
+<html xmlns:wicket="http://www.w3.org/1999/XSL/Transform">
+<body>
+
+<wicket:extend>
+
+    <div class="row">
+        <div class="container">
+
+            <h2><wicket:message key="title">New Comment</wicket:message></h2>
+
+            <!--<div wicket:id="feedbackPanel" class="alert alert-error"></div>-->
+
+            <form wicket:id="commentForm" method="post" class="form-horizontal" enctype="multipart/form-data">
+
+                <div class="control-group">
+                    <label class="control-label" for="fromDate">
+                        <wicket:message key="fromDate">From</wicket:message>
+                    </label>
+                    <div class="controls">
+                        <input class="datepicker" type="text" wicket:id="fromDate" />
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="toDate">
+                        <wicket:message key="toDate">To</wicket:message>
+                    </label>
+                    <div class="controls">
+                        <input class="datepicker" type="text" wicket:id="toDate" />
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="companions">
+                        <wicket:message key="companions">To</wicket:message>
+                    </label>
+                    <div class="controls">
+                        <span><input type="checkbox" wicket:id="enabledCompanions" />
+                        <select wicket:id="companions"></select></span>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="reason">
+                        <wicket:message key="reason">To</wicket:message>
+                    </label>
+                    <div class="controls">
+                        <span><input type="checkbox" wicket:id="enabledReason" />
+                        <select wicket:id="reason"></select></span>
+                    </div>
+                </div>
+
+
+
+                <div class="control-group">
+                    <label class="control-label" for="comment">
+                        <wicket:message key="comment">Comment</wicket:message>
+                    </label>
+                    <div class="controls">
+                        <textarea rows="3" wicket:id="details"></textarea>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <div class="row">
+                        <div wicket:id="hygieneRatingPanel" class="span1"></div>
+                        <div wicket:id="facilitiesRatingPanel" class="span1"></div>
+                        <div wicket:id="servicesRatingPanel" class="span1"></div>
+                        <div wicket:id="locationRatingPanel" class="span1"></div>
+                        <div wicket:id="priceRatingPanel" class="span1"></div>
+                        <div wicket:id="comfortRatingPanel" class="span1"></div>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <div class="controls">
+                        <button wicket:id="submit" type="submit" class="btn btn-primary">
+                            <wicket:message key="submit">Submit</wicket:message>
+                        </button>
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+
+</wicket:extend>
+
+</body>
+</html>

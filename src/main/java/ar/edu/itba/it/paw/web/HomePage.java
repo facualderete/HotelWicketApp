@@ -11,6 +11,7 @@ public class HomePage extends WebPage {
 		super(parameters);
 
 //		add(new Label("version", getApplication().getFrameworkSettings().getVersion()));
+		//TODO: cambiar esto!!
 		add(new Label("version", "Tu vieja en tanga."));
 
 

@@ -1,12 +1,11 @@
 package ar.edu.itba.it.paw.web.hotel;
 
 import ar.edu.itba.it.paw.common.DateStringHelper;
-import ar.edu.itba.it.paw.domain.Comment;
-import ar.edu.itba.it.paw.domain.Hotel;
-import ar.edu.itba.it.paw.domain.HotelEvaluation;
-import ar.edu.itba.it.paw.domain.HotelRepo;
+import ar.edu.itba.it.paw.domain.*;
 import ar.edu.itba.it.paw.web.base.BasePage;
+import ar.edu.itba.it.paw.web.comment.CommentFormPage;
 import org.apache.wicket.markup.html.basic.Label;
+import org.apache.wicket.markup.html.link.Link;
 import org.apache.wicket.markup.html.list.ListItem;
 import org.apache.wicket.markup.html.list.ListView;
 import org.apache.wicket.model.IModel;
@@ -28,26 +27,34 @@ public class HotelDetailPage extends BasePage{
 
     public HotelDetailPage(final PageParameters parameters){
 
-        final Hotel hotel = hotelRepo.get(parameters.get("hotelId").toInteger());
+        final IModel<Hotel> hotel = new EntityModel(Hotel.class, hotelRepo.get(parameters.get("hotelId").toInteger()));
 
-        add(new Label("hotelNameTitle", hotel.getName()));
-        add(new Label("hotelCategory", hotel.getCategory()));
-        add(new Label("hotelType", hotel.getType()));
-        add(new Label("hotelPrice", hotel.getPrice()));
-        add(new Label("hotelCity", hotel.getDestination().getDestination()));
-        add(new Label("hotelAddress", hotel.getAddress()));
-        add(new Label("hotelPhone", hotel.getPhone()));
+        Link<Void> newCommentLink = new Link<Void>("newCommentLink") {
+            @Override
+            public void onClick() {
+                setResponsePage(new CommentFormPage(new PageParameters().set("hotelId", hotel.getObject().getId())));
+            }
+        };
+
+        add(newCommentLink);
+        add(new Label("hotelNameTitle", hotel.getObject().getName()));
+        add(new Label("hotelCategory", hotel.getObject().getCategory()));
+        add(new Label("hotelType", hotel.getObject().getType()));
+        add(new Label("hotelPrice", hotel.getObject().getPrice()));
+        add(new Label("hotelCity", hotel.getObject().getDestination().getDestination()));
+        add(new Label("hotelAddress", hotel.getObject().getAddress()));
+        add(new Label("hotelPhone", hotel.getObject().getPhone()));
         //TODO: esto debería ser un link a una ventana externa!!
-        add(new Label("hotelWebsite", hotel.getWebsite()));
+        add(new Label("hotelWebsite", hotel.getObject().getWebsite()));
         String breakfastLabel;
-        if(hotel.getBreakfast()){
+        if(hotel.getObject().getBreakfast()){
             breakfastLabel = "breakfast_included";
         }else{
             breakfastLabel = "breakfast_not_included";
         }
 
         add(new Label("hotelBreakfast", this.getString(breakfastLabel)));
-        add(new Label("hotelViews", hotel.getAccessCounter()));
+        add(new Label("hotelViews", hotel.getObject().getAccessCounter()));
 
         Label noCommentsLabel = new Label("noCommentsTitle", this.getString("title_no_comments"));
         Label commentsLabel = new Label("commentsTitle", this.getString("title_comments"));
@@ -56,7 +63,7 @@ public class HotelDetailPage extends BasePage{
         commentsLabel.setVisible(false);
 
         //TODO: esto es una villereada... Sólo para salir del paso por ahora! Hay que hacer models de los Comments
-        SortedSet<Comment> comments = (SortedSet<Comment>)hotelRepo.getCommentsOnHotel(hotel);
+        SortedSet<Comment> comments = (SortedSet<Comment>)hotelRepo.getCommentsOnHotel(hotel.getObject());
         final LinkedList<Comment> commentsList = new LinkedList<Comment>();
         for(Comment c : comments){
             commentsList.add(c);
@@ -69,7 +76,7 @@ public class HotelDetailPage extends BasePage{
             }
         };
 
-        HotelEvaluation evaluation = hotel.getEvaluation();
+        HotelEvaluation evaluation = hotel.getObject().getEvaluation();
         add(new Label("hygieneEvaluation", evaluation.getHygiene() == 0? "-":evaluation.getHygiene()));
         add(new Label("facilitiesEvaluation", evaluation.getFacilities() == 0? "-":evaluation.getFacilities()));
         add(new Label("serviceEvaluation", evaluation.getService() == 0? "-":evaluation.getService()));
