@@ -2,8 +2,12 @@ package ar.edu.itba.it.paw.web.comment;
 
 import ar.edu.itba.it.paw.common.DateStringHelper;
 import ar.edu.itba.it.paw.domain.Comment;
+import ar.edu.itba.it.paw.domain.User;
 import ar.edu.itba.it.paw.web.user.ProfilePage;
+import org.apache.wicket.ajax.AjaxEventBehavior;
+import org.apache.wicket.ajax.AjaxRequestTarget;
 import org.apache.wicket.markup.html.basic.Label;
+import org.apache.wicket.markup.html.form.Button;
 import org.apache.wicket.markup.html.link.Link;
 import org.apache.wicket.markup.html.list.ListItem;
 import org.apache.wicket.markup.html.list.ListView;
@@ -31,7 +35,18 @@ public class CommentListPanel extends Panel {
                 @Override
                 protected void populateItem(final ListItem<Comment> item) {
 
-                    Comment comment = item.getModelObject();
+                    final Comment comment = item.getModelObject();
+                    final User user = comment.getUser();
+
+                    Button button = new Button("button");
+                    button.add(new AjaxEventBehavior("onclick") {
+                        @Override
+                        protected void onEvent(final AjaxRequestTarget target) {
+                            System.out.println("Event");
+                        }
+                    });
+                    item.add(button);
+
                     item.add(new Label("fromDate", DateStringHelper.getStringFromDate(comment.getFromDate())));
                     item.add(new Label("toDate", DateStringHelper.getStringFromDate(comment.getToDate())));
                     item.add(new Label("commentDate", DateStringHelper.getStringFromDate(comment.getCommentDate())));
@@ -48,11 +63,11 @@ public class CommentListPanel extends Panel {
 
                     Link hotelDetailLink = new Link("userProfileLink"){
                         public void onClick(){
-                            setResponsePage(new ProfilePage(new PageParameters().set("userEmail", item.getModelObject().getUser().getEmail())));
+                            setResponsePage(new ProfilePage(new PageParameters().set("userEmail", user.getEmail())));
                         }
                     };
 
-                    hotelDetailLink.add(new Label("user", comment.getUser().getName()));
+                    hotelDetailLink.add(new Label("userEmail", comment.getUser().getEmail()));
                     item.add(hotelDetailLink);
                 }
             });
