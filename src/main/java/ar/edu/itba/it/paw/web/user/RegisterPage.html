@@ -76,6 +76,16 @@
                         </div>
 
                         <div class="control-group">
+                            <label class="control-label" for="captcha">
+                                <wicket:message key="captcha">Captcha test</wicket:message>
+                            </label>
+                            <div class="controls">
+                                <img wicket:id="kaptchaImage" />
+                                <input type="text"wicket:id="captcha">
+                            </div>
+                        </div>
+
+                        <div class="control-group">
                             <div class="controls">
                                 <button wicket:id="register" type="submit" class="btn btn-primary">
                                     <wicket:message key="submit">Submit</wicket:message>

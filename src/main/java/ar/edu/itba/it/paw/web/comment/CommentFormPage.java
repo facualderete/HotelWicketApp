@@ -14,7 +14,7 @@ import org.apache.wicket.spring.injection.annot.SpringBean;
 import java.util.Arrays;
 import java.util.List;
 
-public class CommentFormPage extends SecuredPage{
+public class CommentFormPage extends SecuredPage {
 
     @SpringBean
     private UserRepo users;

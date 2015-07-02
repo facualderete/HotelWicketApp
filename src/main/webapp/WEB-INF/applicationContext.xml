@@ -10,4 +10,13 @@
     <import resource="classpath:beans.xml"/>
     <import resource="classpath:data.xml"/>
 
+    <bean id="captchaProducer" class="com.google.code.kaptcha.impl.DefaultKaptcha">
+        <property name="config">
+            <bean class="com.google.code.kaptcha.util.Config">
+                <constructor-arg type="java.util.Properties" value="null">
+                </constructor-arg>
+            </bean>
+        </property>
+    </bean>
+
 </beans>

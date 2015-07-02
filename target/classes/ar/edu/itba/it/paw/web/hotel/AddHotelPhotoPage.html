@@ -1,0 +1,39 @@
+<wicket:extend xmlns:wicket="http://www.w3.org/1999/XSL/Transform">
+
+    <h2><wicket:message key="title">Add picture to </wicket:message><span wicket:id="hotelNameTitle"></span></h2>
+
+    <form wicket:id="addHotelPhotoForm" method="post" class="form-horizontal" enctype="multipart/form-data">
+
+        <div class="control-group">
+            <label class="control-label" for="uploadingPicture">
+                <wicket:message key="add_new">Add pic</wicket:message>
+            </label>
+            <div class="controls">
+                <input type="file" name="uploadingPicture" wicket:id="uploadingPicture"/>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label" for="isMain">
+                <wicket:message key="set_main">Is main</wicket:message>
+            </label>
+            <div class="controls">
+                <input type="checkbox" wicket:id="isMain" />
+            </div>
+        </div>
+
+        <div class="control-group">
+            <div class="controls">
+                <button wicket:id="addPhoto" type="submit" class="btn btn-primary">
+                    <wicket:message key="submit">Submit</wicket:message>
+                </button>
+            </div>
+        </div>
+
+    </form>
+
+    <button wicket:id="goBackLink" class="btn">
+        <wicket:message key="go_back">Go back</wicket:message>
+    </button>
+
+</wicket:extend>

@@ -47,8 +47,14 @@ public class ProfilePage extends BasePage{
             }
         };
 
-        add(new CommentListPanel("commentListPanel", commentsListModel));
+        CommentListPanel commentListPanel = new CommentListPanel("commentListPanel", commentsListModel);
+
+        if (commentsList.size() > 0) {
+            commentListPanel.setVisible(true);
+        } else {
+            commentListPanel.setVisible(false);
+        }
+
+        add(commentListPanel);
     }
-
-
 }
