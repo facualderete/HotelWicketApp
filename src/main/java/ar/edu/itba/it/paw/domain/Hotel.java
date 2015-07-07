@@ -220,6 +220,17 @@ public class Hotel extends PersistentEntity implements Comparable<Hotel> {
         return null;
     }
 
+	public Picture getPicture(Picture picture){
+
+		for(Picture p : this.pictures){
+			if(p.equals(picture)){
+				return p;
+			}
+		}
+
+		return null;
+	}
+
     public HotelEvaluation getEvaluation(){
 
         HotelEvaluation evaluation = new HotelEvaluation();

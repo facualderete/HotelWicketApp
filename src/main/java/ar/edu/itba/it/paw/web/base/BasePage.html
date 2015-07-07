@@ -6,12 +6,12 @@
         <title>Hotel App</title>
         <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
         <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
-        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-responsive.min.css" />
+        <!--<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-responsive.min.css" />-->
         <link rel="stylesheet" type="text/css" href="css/pictures.css" />
-        <link rel="stylesheet" type="text/css" href="jquery-ui/css/ui-lightness/jquery-ui-1.10.4.custom.css">
-        <script type="text/javascript" src="jquery-ui/js/jquery-1.10.2.js"></script>
-        <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.10.4.custom.js"></script>
-        <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+        <!--<link rel="stylesheet" type="text/css" href="jquery-ui/css/ui-lightness/jquery-ui-1.10.4.custom.css">-->
+        <!--<script type="text/javascript" src="jquery-ui/js/jquery-1.10.2.js"></script>-->
+        <!--<script type="text/javascript" src="jquery-ui/js/jquery-ui-1.10.4.custom.js"></script>-->
+        <!--<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>-->
 
     </head>
     <body>
@@ -20,12 +20,19 @@
                 <div class="navbar">
                     <div class="navbar-inner">
                         <div class="navbar-form pull-left">
-                            <img wicket:id="profilePictureHeader" class="nav-bar">
-                            <a wicket:id="user">userEmail</a>
                             <button wicket:id="home" class="btn btn-primary">Home</button>&nbsp;&nbsp;
+                            <img wicket:id="profilePictureHeader" class="nav-bar">
+                            <a href="#" wicket:id="userProfileLink"><span wicket:id="userEmail"></span></a>
+                        </div>
+                        <div class="navbar-form right">
                             <button wicket:id="login" class="btn btn-primary">Login</button>
                             <button wicket:id="register" class="btn btn-primary">Register</button>
                             <button wicket:id="logout" class="btn btn-primary pull-right">Logout</button>
+                        </div>
+                        <div class="navbar-form left">
+                            <form wicket:id="searchForm">
+                                <input type="text" wicket:id="searchField" />
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -37,11 +44,11 @@
     </body>
 </html>
 
-<script type="text/javascript">
-  $(document).ready(function() {
-    $(".datepicker").datepicker({ dateFormat: "dd-mm-yy" });
-    $('.carousel').carousel({
-      interval: 2000
-    });
-  });
-</script>
+<!--<script type="text/javascript">-->
+  <!--$(document).ready(function() {-->
+    <!--$(".datepicker").datepicker({ dateFormat: "dd-mm-yy" });-->
+    <!--$('.carousel').carousel({-->
+      <!--interval: 2000-->
+    <!--});-->
+  <!--});-->
+<!--</script>-->

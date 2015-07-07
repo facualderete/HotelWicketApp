@@ -11,7 +11,7 @@ public class ImageResourceReference extends ResourceReference {
     private byte[] img;
 
     public ImageResourceReference(byte[] img, String suffix) {
-        super(ImageResourceReference.class, "Social_cthulhus_horocrux_"
+        super(ImageResourceReference.class, "Hotel_wicket_image_"
                 + new Random().nextLong() + suffix);
         this.img = img;
     }

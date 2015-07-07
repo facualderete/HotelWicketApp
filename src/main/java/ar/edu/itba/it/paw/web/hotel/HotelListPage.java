@@ -4,6 +4,7 @@ import ar.edu.itba.it.paw.domain.Destination;
 import ar.edu.itba.it.paw.domain.Hotel;
 import ar.edu.itba.it.paw.domain.HotelRepo;
 import ar.edu.itba.it.paw.domain.UserRepo;
+import ar.edu.itba.it.paw.web.AutoCompletePage;
 import ar.edu.itba.it.paw.web.HotelWicketSession;
 import ar.edu.itba.it.paw.web.base.BasePage;
 import org.apache.wicket.markup.html.basic.Label;
@@ -25,10 +26,11 @@ public class HotelListPage extends BasePage{
 
     @SpringBean
     private HotelRepo hotelRepo;
+
     @SpringBean
     private UserRepo userRepo;
 
-    public HotelListPage(){
+    public HotelListPage() {
 
         final IModel<List<Hotel>> hotelsListModel = new LoadableDetachableModel<List<Hotel>>() {
             @Override
@@ -46,8 +48,8 @@ public class HotelListPage extends BasePage{
                 item.add(new Label("destination", hotel.getDestination().getDestination()));
                 item.add(new Label("comments", hotel.getAmountOfComments()));
 
-                Link hotelDetailLink = new Link("hotelDetailLink"){
-                    public void onClick(){
+                Link hotelDetailLink = new Link("hotelDetailLink") {
+                    public void onClick() {
                         setResponsePage(new HotelDetailPage(new PageParameters().set("hotelId", item.getModelObject().getId())));
                     }
                 };
@@ -75,7 +77,21 @@ public class HotelListPage extends BasePage{
             }
         });
 
+        add(new Link("advancedSearchLink"){
+            public void onClick(){
+                setResponsePage(new HotelAdvancedSearchPage());
+            }
+        });
 
+        Link<Void> autocompletepage = new Link<Void>("autocompletepage") {
+            @Override
+            public void onClick() {
+                setResponsePage(AutoCompletePage.class);
+            }
+
+        };
+
+        add(autocompletepage);
     }
 
 

@@ -20,6 +20,7 @@ public class User extends PersistentEntity{
     private String email;
     private String password;
     private boolean admin;
+    private String token;
 
     @OneToOne
     @Cascade({org.hibernate.annotations.CascadeType.DELETE_ORPHAN, org.hibernate.annotations.CascadeType.ALL})
@@ -61,6 +62,22 @@ public class User extends PersistentEntity{
          }
 
          return result;
+    }
+
+    public String getToken() {
+        return token;
+    }
+
+    public void setToken(String token) {
+        this.token = token;
+    }
+
+    public boolean validateToken(String token) {
+        return this.token != null && this.token.equals(token);
+    }
+
+    public void resetToken() {
+        this.token = null;
     }
 
     public void setComments(SortedSet<Comment> comments) {

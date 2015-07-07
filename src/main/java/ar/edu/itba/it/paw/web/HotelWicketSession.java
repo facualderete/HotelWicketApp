@@ -55,6 +55,10 @@ public class HotelWicketSession extends WebSession {
         return isSignedIn() && users.getByEmail(userEmail).getAdmin();
     }
 
+    protected void setUserEmailFromCookies(String userEmail) {
+        this.userEmail = userEmail;
+    }
+
     @Override
     public void detach() {
         super.detach();

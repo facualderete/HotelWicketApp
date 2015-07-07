@@ -2,6 +2,7 @@ package ar.edu.itba.it.paw.web.comment;
 
 import ar.edu.itba.it.paw.common.DateStringHelper;
 import ar.edu.itba.it.paw.domain.Comment;
+import ar.edu.itba.it.paw.domain.EntityModel;
 import ar.edu.itba.it.paw.domain.User;
 import ar.edu.itba.it.paw.web.user.ProfilePage;
 import org.apache.wicket.ajax.AjaxEventBehavior;
@@ -18,6 +19,10 @@ import org.apache.wicket.request.mapper.parameter.PageParameters;
 import java.util.List;
 
 public class CommentListPanel extends Panel {
+
+    IModel<User> userModel = new EntityModel<User>(User.class);
+    IModel<Comment> commentModel = new EntityModel<Comment>(Comment.class);
+
     public CommentListPanel(String id, IModel<List<Comment>> commentListModel) {
         super(id, commentListModel);
 
@@ -31,8 +36,8 @@ public class CommentListPanel extends Panel {
             @Override
             protected void populateItem(final ListItem<Comment> item) {
 
-                final Comment comment = item.getModelObject();
-                final User user = comment.getUser();
+                commentModel.setObject(item.getModelObject());
+                userModel.setObject(commentModel.getObject().getUser());
 
                 Button button = new Button("button");
                 button.add(new AjaxEventBehavior("onclick") {
@@ -43,28 +48,28 @@ public class CommentListPanel extends Panel {
                 });
                 item.add(button);
 
-                item.add(new Label("fromDate", DateStringHelper.getStringFromDate(comment.getFromDate())));
-                item.add(new Label("toDate", DateStringHelper.getStringFromDate(comment.getToDate())));
-                item.add(new Label("commentDate", DateStringHelper.getStringFromDate(comment.getCommentDate())));
-                item.add(new Label("reason", comment.getReason()));
-                item.add(new Label("companions", comment.getCompanions()));
-                item.add(new Label("details", comment.getDetails()));
-                item.add(new Label("hygiene", comment.getRating().getHygiene() == 0 ? "-" : comment.getRating().getHygiene()));
-                item.add(new Label("facilities", comment.getRating().getFacilities() == 0 ? "-" : comment.getRating().getFacilities()));
-                item.add(new Label("service", comment.getRating().getService() == 0 ? "-" : comment.getRating().getService()));
-                item.add(new Label("location", comment.getRating().getLocation() == 0 ? "-" : comment.getRating().getLocation()));
-                item.add(new Label("price", comment.getRating().getPrice() == 0 ? "-" : comment.getRating().getPrice()));
-                item.add(new Label("comfort", comment.getRating().getComfort() == 0 ? "-" : comment.getRating().getComfort()));
-                item.add(new Label("general", comment.getRating().getAverageRating() == 0 ? "-" : comment.getRating().getAverageRating()));
+                item.add(new Label("fromDate", DateStringHelper.getStringFromDate(commentModel.getObject().getFromDate())));
+                item.add(new Label("toDate", DateStringHelper.getStringFromDate(commentModel.getObject().getToDate())));
+                item.add(new Label("commentDate", DateStringHelper.getStringFromDate(commentModel.getObject().getCommentDate())));
+                item.add(new Label("reason", commentModel.getObject().getReason()));
+                item.add(new Label("companions", commentModel.getObject().getCompanions()));
+                item.add(new Label("details", commentModel.getObject().getDetails()));
+                item.add(new Label("hygiene", commentModel.getObject().getRating().getHygiene() == 0 ? "-" : commentModel.getObject().getRating().getHygiene()));
+                item.add(new Label("facilities", commentModel.getObject().getRating().getFacilities() == 0 ? "-" : commentModel.getObject().getRating().getFacilities()));
+                item.add(new Label("service", commentModel.getObject().getRating().getService() == 0 ? "-" : commentModel.getObject().getRating().getService()));
+                item.add(new Label("location", commentModel.getObject().getRating().getLocation() == 0 ? "-" : commentModel.getObject().getRating().getLocation()));
+                item.add(new Label("price", commentModel.getObject().getRating().getPrice() == 0 ? "-" : commentModel.getObject().getRating().getPrice()));
+                item.add(new Label("comfort", commentModel.getObject().getRating().getComfort() == 0 ? "-" : commentModel.getObject().getRating().getComfort()));
+                item.add(new Label("general", commentModel.getObject().getRating().getAverageRating() == 0 ? "-" : commentModel.getObject().getRating().getAverageRating()));
 
-                Link hotelDetailLink = new Link("userProfileLink"){
+                Link userProfileLink = new Link("userProfileLink"){
                     public void onClick(){
-                        setResponsePage(new ProfilePage(new PageParameters().set("userEmail", user.getEmail())));
+                        setResponsePage(new ProfilePage(new PageParameters().set("userEmail", userModel.getObject().getEmail())));
                     }
                 };
 
-                hotelDetailLink.add(new Label("userEmail", comment.getUser().getEmail()));
-                item.add(hotelDetailLink);
+                userProfileLink.add(new Label("userEmail", commentModel.getObject().getUser().getEmail()));
+                item.add(userProfileLink);
             }
         };
 
@@ -75,5 +80,12 @@ public class CommentListPanel extends Panel {
             commentsLabel.setVisible(true);
             commentListView.setVisible(true);
         }
+    }
+
+    @Override
+    protected void onDetach() {
+        super.onDetach();
+        userModel.detach();
+        commentModel.detach();
     }
 }

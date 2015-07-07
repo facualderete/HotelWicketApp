@@ -1,5 +1,6 @@
 package ar.edu.itba.it.paw.web;
 
+import ar.edu.itba.it.paw.common.CookieService;
 import ar.edu.itba.it.paw.common.HibernateRequestCycleListener;
 import ar.edu.itba.it.paw.web.hotel.HotelListPage;
 import org.apache.wicket.Page;
@@ -25,7 +26,8 @@ import org.springframework.stereotype.Component;
 public class WicketApplication extends WebApplication {
 
 	private final SessionFactory sessionFactory;
-
+	private CookieService cookieService = new CookieService();
+	private SessionProvider sessionProvider;
 	public static final ResourceReference DEFAULT_PROFILE_IMAGE = new PackageResourceReference(WicketApplication.class, "resources/default_user_picture.png");
 
 	@Autowired
@@ -45,10 +47,15 @@ public class WicketApplication extends WebApplication {
 		getMarkupSettings().setDefaultMarkupEncoding("UTF-8");
 		getComponentInstantiationListeners().add(new SpringComponentInjector(this));
 		getRequestCycleListeners().add(new HibernateRequestCycleListener(sessionFactory));
+		sessionProvider = new SessionProvider(cookieService);
 	}
 
 	@Override
 	public Session newSession(Request request, Response response) {
 		return new HotelWicketSession(request);
+	}
+
+	public CookieService getCookieService() {
+		return cookieService;
 	}
 }

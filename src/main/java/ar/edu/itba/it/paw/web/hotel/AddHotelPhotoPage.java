@@ -27,12 +27,16 @@ public class AddHotelPhotoPage extends SecuredPage {
     @SpringBean
     HotelRepo hotelRepo;
 
-    private transient List<FileUpload> uploadingPicture;
-    private transient Boolean isMain;
+    //sacar los transient
+    private List<FileUpload> uploadingPicture;
+    private Boolean isMain;
+    private final IModel<Hotel> hotel = new EntityModel<Hotel>(Hotel.class);
 
     public AddHotelPhotoPage(final PageParameters parameters) {
 
-        final IModel<Hotel> hotel = new EntityModel(Hotel.class, hotelRepo.get(parameters.get("hotelId").toInteger()));
+        //Mala práctica... Cambiar por otra cosa.
+        // si no hay hotelId, mandar a otro lado
+        hotel.setObject(hotelRepo.get(parameters.get("hotelId").toInteger()));
         final CheckBox isMain = new CheckBox("isMain", new PropertyModel<Boolean>(this, "isMain"));
 
         Form<AddHotelPhotoPage> form = new Form<AddHotelPhotoPage>(
@@ -44,12 +48,15 @@ public class AddHotelPhotoPage extends SecuredPage {
                 if (!uploadingPicture.isEmpty()) {
                     Picture newPicture = new Picture(PictureHelper.getImageBytes(uploadingPicture));
                     newPicture.setMain(isMain.getModelObject());
+                    Picture mainPic = hotel.getObject().getMainPic();
 
-                    if(isMain.getModelObject()){
-                        Picture mainPic = hotel.getObject().getMainPic();
-                        if(mainPic != null){
-                            mainPic.setMain(false);
-                        }
+                    if(mainPic == null){
+                        newPicture.setMain(true);
+                    } else if (isMain.getModelObject()) {
+                        mainPic.setMain(false);
+                        newPicture.setMain(true);
+                    } else {
+                        newPicture.setMain(false);
                     }
 
                     hotel.getObject().addPicture(newPicture);
@@ -72,5 +79,11 @@ public class AddHotelPhotoPage extends SecuredPage {
         form.add(isMain);
         form.add(new Button("addPhoto", new ResourceModel("addPhoto")));
         add(form);
+    }
+
+    @Override
+    protected void onDetach() {
+        super.onDetach();
+        hotel.detach();
     }
 }

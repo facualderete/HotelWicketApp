@@ -17,6 +17,8 @@
     <orderEntry type="library" name="Maven: org.apache.wicket:wicket-request:6.18.0" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.6.4" level="project" />
     <orderEntry type="library" name="Maven: org.apache.wicket:wicket-extensions:6.18.0" level="project" />
+    <orderEntry type="library" name="Maven: com.googlecode.wicket-jquery-ui:wicket-jquery-ui-core:6.18.0" level="project" />
+    <orderEntry type="library" name="Maven: com.googlecode.wicket-jquery-ui:wicket-jquery-ui:6.18.0" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-webmvc:3.0.2.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-asm:3.0.2.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-beans:3.0.2.RELEASE" level="project" />

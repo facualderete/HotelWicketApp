@@ -1,6 +1,8 @@
 package ar.edu.itba.it.paw.domain.filters;
 
-public class SearchHotelFilter {
+import java.io.Serializable;
+
+public class SearchHotelFilter implements Serializable {
 	private String name;
 	private String city;
 	private Integer priceMin;
@@ -21,6 +23,10 @@ public class SearchHotelFilter {
 		this.categoryMin = categoryMin;
 		this.type = type;
         this.breakfast = breakfast;
+	}
+
+	public SearchHotelFilter () {
+
 	}
 
 	public String getName() {
@@ -54,4 +60,36 @@ public class SearchHotelFilter {
     public String getBreakfast() {
         return breakfast;
     }
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public void setCity(String city) {
+		this.city = city;
+	}
+
+	public void setPriceMin(Integer priceMin) {
+		this.priceMin = priceMin;
+	}
+
+	public void setPriceMax(Integer priceMax) {
+		this.priceMax = priceMax;
+	}
+
+	public void setCategoryMin(Integer categoryMin) {
+		this.categoryMin = categoryMin;
+	}
+
+	public void setCategoryMax(Integer categoryMax) {
+		this.categoryMax = categoryMax;
+	}
+
+	public void setType(String type) {
+		this.type = type;
+	}
+
+	public void setBreakfast(String breakfast) {
+		this.breakfast = breakfast;
+	}
 }

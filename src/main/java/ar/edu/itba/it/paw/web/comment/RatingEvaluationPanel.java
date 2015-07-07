@@ -16,8 +16,8 @@ public class RatingEvaluationPanel extends Panel {
 
     private static final List<Integer> TYPES = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
 
-    private transient Integer selected = 1;
-    private transient Boolean enabled = false;
+    private Integer selected = 1;
+    private Boolean enabled = false;
 
     public RatingEvaluationPanel(String id, IModel<String> evaluationLabel) {
         super(id);

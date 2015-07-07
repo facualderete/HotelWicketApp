@@ -8,10 +8,10 @@ import ar.edu.itba.it.paw.domain.User;
 import ar.edu.itba.it.paw.domain.UserRepo;
 import ar.edu.itba.it.paw.web.HotelWicketSession;
 import ar.edu.itba.it.paw.web.base.BasePage;
+import ar.edu.itba.it.paw.web.feedback.CustomFeedbackPanel;
 import org.apache.wicket.markup.html.form.*;
 import org.apache.wicket.markup.html.form.upload.FileUpload;
 import org.apache.wicket.markup.html.form.upload.FileUploadField;
-import org.apache.wicket.markup.html.panel.FeedbackPanel;
 import org.apache.wicket.model.CompoundPropertyModel;
 import org.apache.wicket.model.PropertyModel;
 import org.apache.wicket.model.ResourceModel;
@@ -24,19 +24,19 @@ public class RegisterPage extends BasePage {
     @SpringBean
     private UserRepo users;
 
-    private transient String name;
-    private transient String lastname;
-    private transient String description;
-    private transient String email;
-    private transient String password;
-    private transient String password2;
-    private transient List<FileUpload> uploadingPicture;
+    private String name;
+    private String lastname;
+    private String description;
+    private String email;
+    private String password;
+    private String password2;
+    private List<FileUpload> uploadingPicture;
 
     private String captchaInput;
 
     public RegisterPage() {
 
-        add(new FeedbackPanel("feedbackPanel"));
+        add(new CustomFeedbackPanel("feedbackPanel"));
 
         Form<RegisterPage> form = new Form<RegisterPage>(
                 "registerForm",
@@ -48,10 +48,8 @@ public class RegisterPage extends BasePage {
                     error(getString("email_already_used"));
                 } else if (!password.equals(password2)) {
                     error(getString("password_nonmatch"));
-                } else if (checkNotEmptyCaptcha()) {
-
-
-                } else {
+                }
+                else {
                     User newUser = new User(name, lastname, description, email, password);
                     if (!uploadingPicture.isEmpty()) {
                         Picture profilePicture = new Picture(PictureHelper.getImageBytes(uploadingPicture));
@@ -61,7 +59,6 @@ public class RegisterPage extends BasePage {
                     HotelWicketSession session = HotelWicketSession.get();
                     session.signIn(email, password, users);
                     continueToOriginalDestination();
-                    //TODO: hacer que vaya al perfil de usuario
                     setResponsePage(getApplication().getHomePage());
                 }
             }

@@ -8,6 +8,8 @@
 
             <h2><wicket:message key="title">Login</wicket:message></h2>
 
+            <div wicket:id="feedbackPanel"></div>
+
             <form wicket:id="loginForm" method="post" class="form-horizontal">
 
                 <div class="control-group">
@@ -25,6 +27,15 @@
                     </label>
                     <div class="controls">
                         <input type="password" wicket:id="password" />
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <div class="controls">
+                        <label class="checkbox"> <input type="checkbox"
+                                                        wicket:id="rememberMe"> <wicket:message
+                                key="remember_me"></wicket:message>
+                        </label>
                     </div>
                 </div>
 
