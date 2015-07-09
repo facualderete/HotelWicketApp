@@ -1,0 +1,89 @@
+<wicket:extend>
+
+    <div class="row">
+        <div class="container">
+
+            <h2><wicket:message key="title">Edit User</wicket:message></h2>
+
+            <div wicket:id="feedbackPanel"></div>
+
+            <form wicket:id="editProfileForm" method="post" class="form-horizontal" enctype="multipart/form-data">
+
+                <div class="control-group">
+                    <label class="control-label" for="name">
+                        <wicket:message key="name">Name</wicket:message>
+                    </label>
+                    <div class="controls">
+                        <input type="text" wicket:id="name" />
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="lastname">
+                        <wicket:message key="lastname">Lastname</wicket:message>
+                    </label>
+                    <div class="controls">
+                        <input type="text" wicket:id="lastname" />
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="description">
+                        <wicket:message key="description">Description</wicket:message>
+                    </label>
+                    <div class="controls">
+                        <textarea rows="3" wicket:id="description"></textarea>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="uploadingPicture">
+                        <wicket:message key="uploadingPicture">Foto de perfil</wicket:message>
+                    </label>
+                    <div class="controls">
+                        <input type="file" name="uploadingPicture" wicket:id="uploadingPicture"/>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="removePicture">
+                        <wicket:message key="removePicture">Borrar foto</wicket:message>
+                    </label>
+                    <div class="controls">
+                        <input type="checkbox" wicket:id="removePicture" />
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="password">
+                        <wicket:message key="password">Password</wicket:message>
+                    </label>
+                    <div class="controls">
+                        <input type="password" wicket:id="password" />
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="password2">
+                        <wicket:message key="password2">Repeat password</wicket:message>
+                    </label>
+                    <div class="controls">
+                        <input type="password" wicket:id="password2" />
+                    </div>
+                </div>
+
+
+                <div class="control-group">
+                    <div class="controls">
+                        <button wicket:id="submit" type="submit" class="btn btn-primary">
+                            <wicket:message key="submit">Submit</wicket:message>
+                        </button>
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+
+</wicket:extend>

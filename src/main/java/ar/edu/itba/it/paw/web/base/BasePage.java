@@ -1,21 +1,19 @@
 package ar.edu.itba.it.paw.web.base;
 
 import ar.edu.itba.it.paw.common.PictureHelper;
-import ar.edu.itba.it.paw.common.SHotel;
 import ar.edu.itba.it.paw.domain.*;
-import ar.edu.itba.it.paw.web.*;
-import ar.edu.itba.it.paw.web.hotel.HotelAutoCompleteTextField;
+import ar.edu.itba.it.paw.web.HomePage;
+import ar.edu.itba.it.paw.web.HotelWicketSession;
+import ar.edu.itba.it.paw.web.SessionProvider;
+import ar.edu.itba.it.paw.web.WicketApplication;
 import ar.edu.itba.it.paw.web.user.LoginPage;
 import ar.edu.itba.it.paw.web.user.ProfilePage;
 import ar.edu.itba.it.paw.web.user.RegisterPage;
-import org.apache.wicket.ajax.AjaxRequestTarget;
 import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.markup.html.basic.Label;
-import org.apache.wicket.markup.html.form.Form;
 import org.apache.wicket.markup.html.image.Image;
 import org.apache.wicket.markup.html.link.Link;
 import org.apache.wicket.model.IModel;
-import org.apache.wicket.model.Model;
 import org.apache.wicket.request.mapper.parameter.PageParameters;
 import org.apache.wicket.spring.injection.annot.SpringBean;
 
@@ -34,7 +32,6 @@ public class BasePage extends WebPage {
     IModel<User> userModel = new EntityModel<User>(User.class);
     private transient String searchText;
     private StringBuilder values = new StringBuilder();
-    IModel<SHotel> hotelModel = Model.of();
 
     @SuppressWarnings("serial")
     public BasePage() {
@@ -87,32 +84,6 @@ public class BasePage extends WebPage {
                 setResponsePage(getApplication().getHomePage());
             }
         };
-
-        Form<BasePage> form = new Form<BasePage>("searchForm") {
-
-            private static final long serialVersionUID = 1L;
-
-            @Override
-            protected void onSubmit() {
-                int i = 0;
-//                SearchPage responsePage = new SearchPage(searchText);
-//                setResponsePage(responsePage);
-            }
-        };
-
-        HotelAutoCompleteTextField hotelAutoCompleteTextField = new HotelAutoCompleteTextField("searchField", hotelModel) {
-            @Override
-            protected void onSelected(AjaxRequestTarget target) {
-                super.onSelected(target);
-//                userSelectPanel.addObject(getModelObject().getModel());
-//                setModelObject(null);
-//                target.add(this, userSelectPanel);
-                target.add(this);
-            }
-        };
-
-        form.add(hotelAutoCompleteTextField);
-        add(form);
 
         Link userProfileLink = new Link("userProfileLink"){
             public void onClick() {

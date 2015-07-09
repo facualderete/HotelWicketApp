@@ -4,10 +4,12 @@ import ar.edu.itba.it.paw.common.PictureHelper;
 import ar.edu.itba.it.paw.domain.Comment;
 import ar.edu.itba.it.paw.domain.User;
 import ar.edu.itba.it.paw.domain.UserRepo;
+import ar.edu.itba.it.paw.web.HotelWicketSession;
 import ar.edu.itba.it.paw.web.base.BasePage;
 import ar.edu.itba.it.paw.web.comment.CommentListPanel;
 import org.apache.wicket.markup.html.basic.Label;
 import org.apache.wicket.markup.html.image.Image;
+import org.apache.wicket.markup.html.link.Link;
 import org.apache.wicket.model.IModel;
 import org.apache.wicket.model.LoadableDetachableModel;
 import org.apache.wicket.request.mapper.parameter.PageParameters;
@@ -56,5 +58,20 @@ public class ProfilePage extends BasePage{
         }
 
         add(commentListPanel);
+
+        Link<Void> editProfileLink = new Link<Void>("editProfileLink") {
+            private static final long serialVersionUID = 1L;
+
+            @Override
+            public void onClick() {
+                setResponsePage(EditProfilePage.class);
+            }
+        };
+
+        if (!HotelWicketSession.get().isSignedIn()) editProfileLink.setVisible(false);
+
+        add(editProfileLink);
+
+        //TODO: agregar la lista de los hoteles favoritos!! Es una pelotudez...
     }
 }

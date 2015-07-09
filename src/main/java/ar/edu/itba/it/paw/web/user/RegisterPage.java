@@ -51,7 +51,7 @@ public class RegisterPage extends BasePage {
                 }
                 else {
                     User newUser = new User(name, lastname, description, email, password);
-                    if (!uploadingPicture.isEmpty()) {
+                    if (uploadingPicture != null && !uploadingPicture.isEmpty()) {
                         Picture profilePicture = new Picture(PictureHelper.getImageBytes(uploadingPicture));
                         newUser.setPicture(profilePicture);
                     }
@@ -83,13 +83,5 @@ public class RegisterPage extends BasePage {
         form.add(captchaTF.setRequired(true));
 
         add(form);
-    }
-
-    private boolean checkNotEmptyCaptcha() {
-        if (captchaInput == null || captchaInput.isEmpty()) {
-            error(getString("empty_captcha"));
-            return false;
-        }
-        return true;
     }
 }
