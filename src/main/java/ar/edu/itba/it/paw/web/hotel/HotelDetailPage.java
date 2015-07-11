@@ -37,7 +37,7 @@ public class HotelDetailPage extends BasePage {
     public HotelDetailPage(final PageParameters parameters){
 
         hotelModel.setObject(hotelRepo.get(parameters.get("hotelId").toInteger()));
-        userModel.setObject(HotelWicketSession.get().getUser());
+        userModel.setObject(userRepo.getByEmail(HotelWicketSession.get().getUserEmail()));
 
         final AjaxLink toggleFavouriteLink = new AjaxLink("toggleFavourite") {
             @Override

@@ -3,6 +3,9 @@ package ar.edu.itba.it.paw.web;
 import ar.edu.itba.it.paw.common.CookieService;
 import ar.edu.itba.it.paw.common.HibernateRequestCycleListener;
 import ar.edu.itba.it.paw.web.hotel.HotelListPage;
+import de.agilecoders.wicket.core.Bootstrap;
+import de.agilecoders.wicket.core.settings.BootstrapSettings;
+import org.apache.wicket.Application;
 import org.apache.wicket.Page;
 import org.apache.wicket.Session;
 import org.apache.wicket.protocol.http.WebApplication;
@@ -47,12 +50,14 @@ public class WicketApplication extends WebApplication {
 		getMarkupSettings().setDefaultMarkupEncoding("UTF-8");
 		getComponentInstantiationListeners().add(new SpringComponentInjector(this));
 		getRequestCycleListeners().add(new HibernateRequestCycleListener(sessionFactory));
+		BootstrapSettings settings = new BootstrapSettings();
+		Bootstrap.install(WicketApplication.this, settings);
 		sessionProvider = new SessionProvider(cookieService);
 	}
 
 	@Override
 	public Session newSession(Request request, Response response) {
-		return new HotelWicketSession(request);
+		return sessionProvider.createNewSession(request);
 	}
 
 	public CookieService getCookieService() {

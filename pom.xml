@@ -42,6 +42,7 @@
 	</licenses>
 	<properties>
 		<wicket.version>6.18.0</wicket.version>
+		<wicket.bootstrap.version>0.8.4</wicket.bootstrap.version>
 		<jetty.version>7.6.13.v20130916</jetty.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<!-- allowed values: R7, 1.0, 1.5, 2.0 or none -->
@@ -60,14 +61,24 @@
 			<version>${wicket.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>com.googlecode.wicket-jquery-ui</groupId>
-			<artifactId>wicket-jquery-ui-core</artifactId>
+			<groupId>org.apache.wicket</groupId>
+			<artifactId>wicket-datetime</artifactId>
 			<version>${wicket.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>com.googlecode.wicket-jquery-ui</groupId>
-			<artifactId>wicket-jquery-ui</artifactId>
-			<version>6.18.0</version>
+			<groupId>de.agilecoders.wicket</groupId>
+			<artifactId>wicket-bootstrap-core</artifactId>
+			<version>${wicket.bootstrap.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>de.agilecoders.wicket</groupId>
+			<artifactId>wicket-bootstrap-extensions</artifactId>
+			<version>${wicket.bootstrap.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>de.agilecoders.wicket</groupId>
+			<artifactId>wicket-bootstrap-themes</artifactId>
+			<version>${wicket.bootstrap.version}</version>
 		</dependency>
 		<!--  SPRING DEPENDENCIES -->
 		<dependency>

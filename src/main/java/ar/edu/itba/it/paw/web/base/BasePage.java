@@ -72,7 +72,7 @@ public class BasePage extends WebPage {
 
             @Override
             public void onClick() {
-                User user = HotelWicketSession.get().getUser();
+                User user = users.getByEmail(HotelWicketSession.get().getUserEmail());
                 user.resetToken();
                 ((WicketApplication) WicketApplication.get()).getCookieService()
                         .removeCookieIfPresent(getRequest(), getResponse(),

@@ -4,7 +4,8 @@ import ar.edu.itba.it.paw.domain.Destination;
 import ar.edu.itba.it.paw.domain.Hotel;
 import ar.edu.itba.it.paw.domain.HotelRepo;
 import ar.edu.itba.it.paw.domain.UserRepo;
-import ar.edu.itba.it.paw.web.AutoCompletePage;
+import ar.edu.itba.it.paw.web.samples.AutoCompletePage;
+import ar.edu.itba.it.paw.web.samples.DatePickerPage;
 import ar.edu.itba.it.paw.web.HotelWicketSession;
 import ar.edu.itba.it.paw.web.base.BasePage;
 import org.apache.wicket.markup.html.basic.Label;
@@ -92,6 +93,16 @@ public class HotelListPage extends BasePage{
         };
 
         add(autocompletepage);
+
+        Link<Void> datepickerpage = new Link<Void>("datepickerpage") {
+            @Override
+            public void onClick() {
+                setResponsePage(DatePickerPage.class);
+            }
+
+        };
+
+        add(datepickerpage);
     }
 
 

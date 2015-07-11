@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: de.agilecoders.wicket:wicket-bootstrap-core:0.10.2">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/de/agilecoders/wicket/wicket-bootstrap-core/0.10.2/wicket-bootstrap-core-0.10.2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/de/agilecoders/wicket/wicket-bootstrap-core/0.10.2/wicket-bootstrap-core-0.10.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/de/agilecoders/wicket/wicket-bootstrap-core/0.10.2/wicket-bootstrap-core-0.10.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

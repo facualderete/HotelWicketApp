@@ -1,6 +1,6 @@
 package ar.edu.itba.it.paw.web.comment;
 
-import ar.edu.itba.it.paw.common.DateStringHelper;
+import ar.edu.itba.it.paw.common.DateHelper;
 import ar.edu.itba.it.paw.domain.Comment;
 import ar.edu.itba.it.paw.domain.EntityModel;
 import ar.edu.itba.it.paw.domain.User;
@@ -48,9 +48,9 @@ public class CommentListPanel extends Panel {
                 });
                 item.add(button);
 
-                item.add(new Label("fromDate", DateStringHelper.getStringFromDate(commentModel.getObject().getFromDate())));
-                item.add(new Label("toDate", DateStringHelper.getStringFromDate(commentModel.getObject().getToDate())));
-                item.add(new Label("commentDate", DateStringHelper.getStringFromDate(commentModel.getObject().getCommentDate())));
+                item.add(new Label("fromDate", DateHelper.getStringFromDate(commentModel.getObject().getFromDate())));
+                item.add(new Label("toDate", DateHelper.getStringFromDate(commentModel.getObject().getToDate())));
+                item.add(new Label("commentDate", DateHelper.getStringFromDate(commentModel.getObject().getCommentDate())));
                 item.add(new Label("reason", commentModel.getObject().getReason()));
                 item.add(new Label("companions", commentModel.getObject().getCompanions()));
                 item.add(new Label("details", commentModel.getObject().getDetails()));
