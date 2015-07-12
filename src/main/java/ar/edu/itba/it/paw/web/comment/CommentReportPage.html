@@ -12,9 +12,7 @@
 	</strong>
 	<br/>
 	<br/>
-	<!--
 	<div id="container" style="min-width: 500px; height: 400px; margin: 0 auto" wicket:id="chart"/>
-	-->
 	<br/>
 	<form wicket:id="form">
 		<span><wicket:message key="filter">Filter buits by date:</wicket:message></span>
@@ -25,7 +23,7 @@
      			<wicket:message key="fromDate">From</wicket:message>
         	</label>
         	<div class="controls">
-            	<input class="datepicker" type="text" wicket:id="fromDate" />
+        		<span wicket:id="fromDate"></span>
             	<div class="text-danger" style="margin-bottom: 0px" wicket:id="toDate_error">
 						La fecha no puede ser vacia
 				</div>
@@ -36,7 +34,7 @@
 				<wicket:message key="toDate">To</wicket:message>
 			</label>
 			<div class="controls">
-				<input class="datepicker" type="text" wicket:id="toDate" />
+				<span wicket:id="toDate"></span>
 				<div class="text-danger" style="margin-bottom: 0px" wicket:id="fromDate_error">
 						Fecha no puede ser vacia
 				</div> 

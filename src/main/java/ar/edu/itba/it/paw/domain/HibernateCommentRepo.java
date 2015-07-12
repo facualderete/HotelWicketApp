@@ -38,8 +38,8 @@ public class HibernateCommentRepo extends AbstractHibernateRepo implements
 	public List<Comment> getWithinRange(final String fromDate,
 			final String toDate) {
 		Query query = getSession().createQuery(
-				"select * from Comment where commentdate between " + fromDate
-						+ " and " + toDate);
+				"select c from Comment c where c.commentDate between \'" + fromDate
+						+ "\' and \'" + toDate + "\'");
 		List<Comment> result = query.list();
 		return result;
 	}
