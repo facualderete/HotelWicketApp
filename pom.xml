@@ -195,7 +195,7 @@
 		</dependency>
 		<dependency>
 			<groupId>com.googlecode.wicked-charts</groupId>
-			<artifactId>wicked-charts-wicket15</artifactId>
+			<artifactId>wicked-charts-wicket6</artifactId>
 			<version>1.5.0</version>
 		</dependency>
 

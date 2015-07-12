@@ -3,7 +3,6 @@ package ar.edu.itba.it.paw.web.comment;
 import java.awt.Color;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Date;
 import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
@@ -32,7 +31,7 @@ import com.googlecode.wickedcharts.highcharts.options.SeriesType;
 import com.googlecode.wickedcharts.highcharts.options.Title;
 import com.googlecode.wickedcharts.highcharts.options.Tooltip;
 import com.googlecode.wickedcharts.highcharts.options.series.SimpleSeries;
-import com.googlecode.wickedcharts.wicket15.highcharts.Chart;
+import com.googlecode.wickedcharts.wicket6.highcharts.Chart;
 
 public class CommentReportPage extends BasePage {
 
