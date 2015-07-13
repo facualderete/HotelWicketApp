@@ -6,13 +6,16 @@ import ar.edu.itba.it.paw.web.HomePage;
 import ar.edu.itba.it.paw.web.HotelWicketSession;
 import ar.edu.itba.it.paw.web.SessionProvider;
 import ar.edu.itba.it.paw.web.WicketApplication;
+import ar.edu.itba.it.paw.web.hotel.HotelDetailPage;
 import ar.edu.itba.it.paw.web.user.LoginPage;
 import ar.edu.itba.it.paw.web.user.ProfilePage;
 import ar.edu.itba.it.paw.web.user.RegisterPage;
+
 import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.markup.html.basic.Label;
 import org.apache.wicket.markup.html.image.Image;
 import org.apache.wicket.markup.html.link.Link;
+import org.apache.wicket.markup.html.pages.RedirectPage;
 import org.apache.wicket.model.IModel;
 import org.apache.wicket.request.mapper.parameter.PageParameters;
 import org.apache.wicket.spring.injection.annot.SpringBean;
@@ -30,12 +33,15 @@ public class BasePage extends WebPage {
     private CommentRepo commentRepo;
 
     IModel<User> userModel = new EntityModel<User>(User.class);
+    IModel<Hotel> hotelModel = new EntityModel<Hotel>(Hotel.class);
     private transient String searchText;
     private StringBuilder values = new StringBuilder();
 
     @SuppressWarnings("serial")
     public BasePage() {
 
+    	
+    	
         HotelWicketSession session = HotelWicketSession.get();
         if (session.isSignedIn()) {
             userModel.setObject(session.getUser());
@@ -48,6 +54,23 @@ public class BasePage extends WebPage {
             }
 
         };
+        
+        hotelModel.setObject(hotelRepo.getAnyOutstanding());
+        
+        Link<Void> outstanding_link = new Link<Void>("outstanding_link") {
+
+			@Override
+			public void onClick() {
+				setResponsePage(new HotelDetailPage(new PageParameters().set("hotelId",hotelModel.getObject().getId())));
+			}
+
+		};
+		
+		outstanding_link.add(new Label("outstandingHotelName",hotelModel.getObject().getName()));
+		
+		add(outstanding_link);
+		if(hotelModel.getObject() == null)
+			outstanding_link.setVisible(false);
 
         Link<Void> register = new Link<Void>("register") {
             private static final long serialVersionUID = 1L;
@@ -125,5 +148,6 @@ public class BasePage extends WebPage {
     protected void onDetach() {
         super.onDetach();
         userModel.detach();
+        hotelModel.detach();
     }
 }

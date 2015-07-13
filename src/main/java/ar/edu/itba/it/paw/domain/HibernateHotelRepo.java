@@ -1,6 +1,7 @@
 package ar.edu.itba.it.paw.domain;
 
 import ar.edu.itba.it.paw.domain.filters.SearchHotelFilter;
+
 import org.hibernate.Criteria;
 import org.hibernate.Query;
 import org.hibernate.SessionFactory;
@@ -112,4 +113,11 @@ public class HibernateHotelRepo extends AbstractHibernateRepo implements
     public Picture getPicture(int pictureId) {
         return get(Picture.class, pictureId);
     }
+
+	@Override
+	public Hotel getAnyOutstanding() {
+		List<Hotel> result = find("from Hotel where outstanding = true");
+		
+		return result.get((int)(Math.random()*result.size()));
+	}
 }
