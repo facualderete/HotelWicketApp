@@ -11,4 +11,6 @@ public interface CommentRepo extends HibernateRepo {
     public Comment get(int commentId);
 
     public Iterable<Comment> getAllFiltered(SearchHotelFilter filter);
+    
+	public List<Comment> getWithinRange(final String fromDate, final String toDate);
 }

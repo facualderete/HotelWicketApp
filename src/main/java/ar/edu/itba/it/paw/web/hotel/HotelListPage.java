@@ -1,13 +1,7 @@
 package ar.edu.itba.it.paw.web.hotel;
 
-import ar.edu.itba.it.paw.domain.Destination;
-import ar.edu.itba.it.paw.domain.Hotel;
-import ar.edu.itba.it.paw.domain.HotelRepo;
-import ar.edu.itba.it.paw.domain.UserRepo;
-import ar.edu.itba.it.paw.web.samples.AutoCompletePage;
-import ar.edu.itba.it.paw.web.samples.DatePickerPage;
-import ar.edu.itba.it.paw.web.HotelWicketSession;
-import ar.edu.itba.it.paw.web.base.BasePage;
+import java.util.List;
+
 import org.apache.wicket.markup.html.basic.Label;
 import org.apache.wicket.markup.html.link.Link;
 import org.apache.wicket.markup.html.list.ListItem;
@@ -17,7 +11,15 @@ import org.apache.wicket.model.LoadableDetachableModel;
 import org.apache.wicket.request.mapper.parameter.PageParameters;
 import org.apache.wicket.spring.injection.annot.SpringBean;
 
-import java.util.List;
+import ar.edu.itba.it.paw.domain.Destination;
+import ar.edu.itba.it.paw.domain.Hotel;
+import ar.edu.itba.it.paw.domain.HotelRepo;
+import ar.edu.itba.it.paw.domain.UserRepo;
+import ar.edu.itba.it.paw.web.HotelWicketSession;
+import ar.edu.itba.it.paw.web.base.BasePage;
+import ar.edu.itba.it.paw.web.comment.CommentReportPage;
+import ar.edu.itba.it.paw.web.samples.AutoCompletePage;
+import ar.edu.itba.it.paw.web.samples.DatePickerPage;
 
 public class HotelListPage extends BasePage{
 
@@ -103,6 +105,16 @@ public class HotelListPage extends BasePage{
         };
 
         add(datepickerpage);
+        
+        Link<Void> commentReportPage = new Link<Void>("commentreportpage") {
+            @Override
+            public void onClick() {
+                setResponsePage(CommentReportPage.class);
+            }
+
+        };
+        
+        add(commentReportPage);
     }
 
 

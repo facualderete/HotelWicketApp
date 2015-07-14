@@ -1,0 +1,67 @@
+		
+<wicket:extend>
+	<h2>
+		<span>
+			<wicket:message key="statistics">Statistics</wicket:message>
+		</span>
+	</h2>
+	<strong>
+		<wicket:message key="analyze">
+			Analyze your buits based on the time they were published
+		</wicket:message>
+	</strong>
+	<br/>
+	<br/>
+	<div id="container" style="min-width: 500px; height: 400px; margin: 0 auto" wicket:id="chart"/>
+	<br/>
+	<form wicket:id="form">
+		<span><wicket:message key="filter">Filter buits by date:</wicket:message></span>
+		<br/>
+		<br/>
+		<div class="control-group">
+        	<label class="control-label" for="fromDate">
+     			<wicket:message key="fromDate">From</wicket:message>
+        	</label>
+        	<div class="controls">
+        		<span wicket:id="fromDate"></span>
+            	<div class="text-danger" style="margin-bottom: 0px" wicket:id="toDate_error">
+						La fecha no puede ser vacia
+				</div>
+           	</div>
+       	</div>
+		<div class="control-group">
+			<label class="control-label" for="toDate">
+				<wicket:message key="toDate">To</wicket:message>
+			</label>
+			<div class="controls">
+				<span wicket:id="toDate"></span>
+				<div class="text-danger" style="margin-bottom: 0px" wicket:id="fromDate_error">
+						Fecha no puede ser vacia
+				</div> 
+			</div>
+		</div>
+		<br/>
+		<p><wicket:message key="group">Group data by: </wicket:message></p>
+		<div class="col-md-2" wicket:id="radioChoice">
+			<!-- <label for="day">Day
+				<input type="radio" value="day"/>
+				</label>
+				<label for="hour">Hour
+				<input type="radio" value="hour"/>
+				</label>
+				<label for="month">Month
+				<input type="radio" value="month"/>
+				</label> -->
+		</div>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<div class="form-group">
+			<div class="col-md-offset-2">
+				<button type="submit" class="btn btn-primary" style="margin-left: 177px;" wicket:id="confirm"><wicket:message key="confirm">Confirm</wicket:message></button>
+			</div> <!-- .col-md-offset-2 -->
+		</div> <!-- .form-group -->
+	</form> <!-- method = post -->
+</wicket:extend>
