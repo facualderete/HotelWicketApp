@@ -2,151 +2,75 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76570d69-18b7-4088-aaff-eb10cce1879a" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/HomePage.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/HomePage.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/samples/AutoCompletePage.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/samples/AutoCompletePage.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/samples/DatePickerPage.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/samples/DatePickerPage.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/helpers/EmailServerConfigurationHelper.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/HomePage.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/HomePage.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelListPage$2$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/samples/AutoCompletePage$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/samples/AutoCompletePage$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/samples/AutoCompletePage$3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/samples/AutoCompletePage.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/samples/AutoCompletePage.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/samples/DatePickerPage$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/samples/DatePickerPage$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/samples/DatePickerPage$3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/samples/DatePickerPage$4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/samples/DatePickerPage$5.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/samples/DatePickerPage$6.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/samples/DatePickerPage$LocaleChoiceRenderer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/samples/DatePickerPage$LocaleDropDownChoice$1$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/samples/DatePickerPage$LocaleDropDownChoice$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/samples/DatePickerPage$LocaleDropDownChoice.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/samples/DatePickerPage.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/samples/DatePickerPage.html" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/helpers/EmailServerConfigurationHelper.java" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/helpers/AppConfigurationHelper.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/img/homer-error.gif" afterPath="$PROJECT_DIR$/src/main/resources/ar/edu/itba/it/paw/web/resources/homer-error.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/AddHotelPhotoPage$1.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/AddHotelPhotoPage$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/AddHotelPhotoPage$2.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/AddHotelPhotoPage$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/AddHotelPhotoPage.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/AddHotelPhotoPage.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/domain/AbstractHibernateRepo.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/domain/AbstractHibernateRepo.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/base/BasePage$1.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/base/BasePage$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/base/BasePage$2.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/base/BasePage$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/base/BasePage$3.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/base/BasePage$3.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/base/BasePage$4.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/base/BasePage$4.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/base/BasePage$5.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/base/BasePage$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/base/BasePage$6.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/base/BasePage$6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/base/BasePage$7.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/base/BasePage$7.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/base/BasePage.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/base/BasePage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/domain/Comment.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/domain/Comment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/comment/CommentFormPage$1.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/comment/CommentFormPage$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/comment/CommentFormPage$2.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/comment/CommentFormPage$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/comment/CommentFormPage$3.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/comment/CommentFormPage$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/common/CaptchaImage$1.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/common/CaptchaImage$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/common/CaptchaImage.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/common/CaptchaImage.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/common/CaptchaValidator.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/common/CaptchaValidator.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/comment/CommentFormPage.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/comment/CommentFormPage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/comment/CommentListPanel$1$1.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/comment/CommentListPanel$1$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/comment/CommentListPanel$1$2.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/comment/CommentListPanel$1$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/comment/CommentListPanel$1.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/comment/CommentListPanel$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/comment/CommentListPanel.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/comment/CommentListPanel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/user/EditProfilePage$1.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/user/EditProfilePage$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/user/EditProfilePage.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/user/EditProfilePage.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/domain/CommentRepo.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/domain/CommentRepo.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/domain/definitions/Companion.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/domain/definitions/Companion.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/common/CookieService.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/common/CookieService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/feedback/CustomFeedbackPanel.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/feedback/CustomFeedbackPanel.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/common/DateHelper.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/common/DateHelper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/comment/DatePickerPanel$1.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/comment/DatePickerPanel$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/comment/DatePickerPanel$2.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/comment/DatePickerPanel$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/comment/DatePickerPanel.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/comment/DatePickerPanel.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/domain/Destination.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/domain/Destination.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/domain/EntityModel.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/domain/EntityModel.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/domain/EntityResolver.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/domain/EntityResolver.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/domain/HibernateCommentRepo.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/domain/HibernateCommentRepo.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/domain/HibernateEntityResolver.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/domain/HibernateEntityResolver.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/domain/HibernateHotelRepo.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/domain/HibernateHotelRepo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/domain/Hotel.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/domain/Hotel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelAdvancedSearchPage$1.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelAdvancedSearchPage$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelAdvancedSearchPage$2.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelAdvancedSearchPage$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelAdvancedSearchPage$3.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelAdvancedSearchPage$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelAdvancedSearchPage$4.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelAdvancedSearchPage$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelAdvancedSearchPage$5.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelAdvancedSearchPage$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelAdvancedSearchPage$6.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelAdvancedSearchPage$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelAdvancedSearchPage$7$1.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelAdvancedSearchPage$7$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelAdvancedSearchPage$7.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelAdvancedSearchPage$7.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelAdvancedSearchPage.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelAdvancedSearchPage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelDetailPage$1.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelDetailPage$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelDetailPage$2.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelDetailPage$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelDetailPage$3.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelDetailPage$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelDetailPage$4.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelDetailPage$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelDetailPage$5.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelDetailPage$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelDetailPage.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelDetailPage.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/domain/HibernateRepo.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/domain/HibernateRepo.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/common/HibernateRequestCycleListener.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/common/HibernateRequestCycleListener.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/domain/HibernateUserRepo.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/domain/HibernateUserRepo.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/common/HomeRedirectServlet.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/common/HomeRedirectServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/domain/HotelEvaluation.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/domain/HotelEvaluation.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelFormPage.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelFormPage.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelListPage$1.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelListPage$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelListPage$2.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelListPage$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelListPage$3$1.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelListPage$3$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelListPage$3.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelListPage$3.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelListPage$4.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelListPage$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelListPage$5$1.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelListPage$5$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelListPage$5.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelListPage$5.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelListPage$6.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelListPage$6.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelListPage$7.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelListPage$7.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelListPage.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelListPage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelPhotoSliderPanel$1.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelPhotoSliderPanel$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelPhotoSliderPanel$2$1.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelPhotoSliderPanel$2$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelPhotoSliderPanel$2$2.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelPhotoSliderPanel$2$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelPhotoSliderPanel$2.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelPhotoSliderPanel$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelPhotoSliderPanel.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelPhotoSliderPanel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/domain/HotelRepo.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/domain/HotelRepo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/HotelWicketSession.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/HotelWicketSession.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/domain/definitions/HotelType.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/domain/definitions/HotelType.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/common/ImageResource.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/common/ImageResource.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/common/ImageResourceReference.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/common/ImageResourceReference.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/user/LoginPage$1.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/user/LoginPage$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/user/LoginPage.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/user/LoginPage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/common/PictureHelper.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/common/PictureHelper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/user/ProfilePage$1.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/user/ProfilePage$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/user/ProfilePage$2.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/user/ProfilePage$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/user/ProfilePage.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/user/ProfilePage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/base/SecuredPage.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/base/SecuredPage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/helpers/SendMailHelper$1.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/helpers/SendMailHelper$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/helpers/SendMailHelper$2.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/helpers/SendMailHelper$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/helpers/SendMailHelper.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/helpers/SendMailHelper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/domain/User.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/domain/User.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/WicketApplication.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/WicketApplication.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/AddHotelPhotoPage.html" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/AddHotelPhotoPage.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/AddHotelPhotoPage.java" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/AddHotelPhotoPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/domain/PersistentEntity.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/domain/PersistentEntity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/domain/Picture.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/domain/Picture.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/domain/Rating.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/domain/Rating.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/comment/RatingEvaluationPanel$1.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/comment/RatingEvaluationPanel$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/comment/RatingEvaluationPanel.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/comment/RatingEvaluationPanel.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/domain/definitions/Reason.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/domain/definitions/Reason.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/user/RegisterPage$1.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/user/RegisterPage$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/user/RegisterPage.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/user/RegisterPage.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/user/RequestNewPasswordPage.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/user/RequestNewPasswordPage.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/domain/filters/SearchHotelFilter.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/domain/filters/SearchHotelFilter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/SessionProvider.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/SessionProvider.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/ar/edu/itba/it/paw/Start.class" afterPath="$PROJECT_DIR$/target/test-classes/ar/edu/itba/it/paw/Start.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/domain/UserRepo.class" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/domain/UserRepo.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/base/BasePage.html" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/base/BasePage.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/base/BasePage.html" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/base/BasePage.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/base/BasePage.java" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/base/BasePage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/base/BasePage.utf8.properties" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/base/BasePage.utf8.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/base/BasePage.utf8.properties" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/base/BasePage.utf8.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/domain/Comment.java" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/domain/Comment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/comment/CommentFormPage.html" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/comment/CommentFormPage.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/comment/CommentFormPage.html" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/comment/CommentFormPage.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/comment/CommentFormPage.java" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/comment/CommentFormPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/comment/CommentFormPage.utf8.properties" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/comment/CommentFormPage.utf8.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/comment/CommentFormPage.utf8.properties" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/comment/CommentFormPage.utf8.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/comment/CommentListPanel.html" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/comment/CommentListPanel.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/comment/CommentListPanel.html" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/comment/CommentListPanel.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/comment/CommentListPanel.java" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/comment/CommentListPanel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/comment/CommentListPanel.utf8.properties" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/comment/CommentListPanel.utf8.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/comment/CommentListPanel.utf8.properties" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/comment/CommentListPanel.utf8.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/user/EditProfilePage.html" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/user/EditProfilePage.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/user/EditProfilePage.html" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/user/EditProfilePage.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/user/EditProfilePage.java" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/user/EditProfilePage.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/domain/HibernateHotelRepo.java" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/domain/HibernateHotelRepo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/domain/Hotel.java" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/domain/Hotel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelAdvancedSearchPage.java" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelAdvancedSearchPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelDetailPage.html" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelDetailPage.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelDetailPage.html" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelDetailPage.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelDetailPage.java" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelDetailPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelDetailPage.utf8.properties" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelDetailPage.utf8.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelDetailPage.utf8.properties" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelDetailPage.utf8.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelListPage.html" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelListPage.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelListPage.html" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelListPage.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelListPage.java" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelListPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelListPage.utf8.properties" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelListPage.utf8.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelListPage.utf8.properties" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelListPage.utf8.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelPhotoSliderPanel.html" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelPhotoSliderPanel.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelPhotoSliderPanel.html" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/hotel/HotelPhotoSliderPanel.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelPhotoSliderPanel.java" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelPhotoSliderPanel.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/domain/HotelRepo.java" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/domain/HotelRepo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/HotelWicketSession.java" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/HotelWicketSession.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/common/PictureHelper.java" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/common/PictureHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/user/ProfilePage.html" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/user/ProfilePage.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/user/ProfilePage.html" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/user/ProfilePage.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/user/ProfilePage.java" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/user/ProfilePage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/user/ProfilePage.utf8.properties" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/user/ProfilePage.utf8.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/user/ProfilePage.utf8.properties" afterPath="$PROJECT_DIR$/target/classes/ar/edu/itba/it/paw/web/user/ProfilePage.utf8.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/base/SecuredPage.java" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/base/SecuredPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/helpers/SendMailHelper.java" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/helpers/SendMailHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/domain/User.java" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/domain/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/WicketApplication.java" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/WicketApplication.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/hotelApp.conf" afterPath="$PROJECT_DIR$/src/main/resources/hotelApp.conf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/hotelApp.conf" afterPath="$PROJECT_DIR$/target/classes/hotelApp.conf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hotelapp.iml" afterPath="$PROJECT_DIR$/hotelapp.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -178,7 +102,65 @@
     <favorites_list name="HotelApp" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="BasePage.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/base/BasePage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.8810916" vertical-offset="808" max-vertical-offset="2700">
+              <caret line="90" column="26" selection-start-line="90" selection-start-column="26" selection-end-line="90" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1516#1523#0" expanded="true" />
+                <element signature="e#4355#4361#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BasePage.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/base/BasePage.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.2916665" vertical-offset="428" max-vertical-offset="1065">
+              <caret line="37" column="50" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BasePage.utf8.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/base/BasePage.utf8.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="135">
+              <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DatePickerPanel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/comment/DatePickerPanel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="111" max-vertical-offset="690">
+              <caret line="32" column="36" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
+              <folding>
+                <element signature="e#1086#1330#0" expanded="true" />
+                <element signature="e#1329#1330#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HotelListPage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelListPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1079" max-vertical-offset="1755">
+              <caret line="123" column="16" selection-start-line="123" selection-start-column="16" selection-end-line="123" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -220,23 +202,23 @@
         <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/WicketApplication.java" />
         <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/DestinationPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelAdvancedSearchPage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelListPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/helpers/SendMailHelper.java" />
         <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelPhotoSliderPanel.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/pictures.css" />
         <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelPhotoSliderPanel.html" />
         <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/AddHotelPhotoPage.html" />
         <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/AddHotelPhotoPage.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelListPage.html" />
-        <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/domain/HotelRepo.java" />
         <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/domain/Hotel.java" />
         <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelDetailPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelDetailPage.html" />
-        <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/domain/HibernateHotelRepo.java" />
         <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/common/PictureHelper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/base/BasePage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelListPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelListPage.html" />
+        <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/domain/HotelRepo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/domain/HibernateHotelRepo.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/base/BasePage.html" />
+        <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/base/BasePage.java" />
       </list>
     </option>
   </component>
@@ -386,7 +368,41 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="hotel" />
+              <option name="myItemId" value="comment" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hotelapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HotelWicketApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="paw" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="base" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -695,7 +711,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -703,9 +719,9 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32386363" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30397728" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24431819" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2315341" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -715,7 +731,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.6066236" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23990306" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23990306" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22443181" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -767,46 +783,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/user/RegisterPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7646443" vertical-offset="184" max-vertical-offset="1140">
-          <caret line="78" column="71" selection-start-line="77" selection-start-column="8" selection-end-line="78" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/comment/CommentFormPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31380752" vertical-offset="255" max-vertical-offset="2580">
-          <caret line="55" column="53" selection-start-line="55" selection-start-column="53" selection-end-line="55" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/comment/CommentFormPage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4828326" vertical-offset="30" max-vertical-offset="1440">
-          <caret line="32" column="16" selection-start-line="32" selection-start-column="16" selection-end-line="40" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/comment/CommentFormPage.utf8.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="956">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelFormPage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17874396" vertical-offset="474" max-vertical-offset="1515">
-          <caret line="39" column="43" selection-start-line="39" selection-start-column="43" selection-end-line="39" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/googlecode/wicket-jquery-ui/wicket-jquery-ui-core/6.18.0/wicket-jquery-ui-core-6.18.0.jar!/com/googlecode/wicket/jquery/core/renderer/ITextRenderer.class">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.14516129" vertical-offset="0" max-vertical-offset="620">
@@ -860,10 +836,9 @@
         <state vertical-scroll-proportion="0.31213018" vertical-offset="1079" max-vertical-offset="1995">
           <caret line="89" column="56" selection-start-line="89" selection-start-column="37" selection-end-line="89" selection-end-column="56" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1094#1101#0" expanded="true" />
-            <element signature="e#1263#1271#0" expanded="true" />
-            <element signature="e#1449#1462#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#1094#1101#0" expanded="false" />
+            <element signature="e#1449#1462#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -970,14 +945,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/HotelWicketSession.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.97098213" vertical-offset="90" max-vertical-offset="795">
-          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/WicketApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="344" max-vertical-offset="1020">
@@ -1028,16 +995,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelListPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23214285" vertical-offset="571" max-vertical-offset="1635">
-          <caret line="66" column="21" selection-start-line="66" selection-start-column="21" selection-end-line="66" selection-end-column="21" />
-          <folding>
-            <element signature="e#1159#1166#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/DestinationPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3325893" vertical-offset="511" max-vertical-offset="1035">
@@ -1051,17 +1008,9 @@
         <state vertical-scroll-proportion="0.3831361" vertical-offset="11" max-vertical-offset="990">
           <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
           <folding>
-            <element signature="e#831#1103#0" expanded="true" />
-            <element signature="e#1102#1103#0" expanded="true" />
+            <element signature="e#831#1103#0" expanded="false" />
+            <element signature="e#1102#1103#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/base/BasePage.utf8.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="135">
-          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1097,45 +1046,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelPhotoSliderPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="930">
-          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
-          <folding>
-            <element signature="e#942#1165#0" expanded="true" />
-            <element signature="e#1164#1165#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/css/pictures.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.53571427" vertical-offset="0" max-vertical-offset="504">
           <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6547619" vertical-offset="735" max-vertical-offset="4275">
-          <caret line="71" column="21" selection-start-line="71" selection-start-column="21" selection-end-line="71" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/domain/HotelRepo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
-          <caret line="25" column="37" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelListPage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5981595" vertical-offset="0" max-vertical-offset="855">
-          <caret line="26" column="15" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="15" />
           <folding />
         </state>
       </provider>
@@ -1145,7 +1059,7 @@
         <state vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="300">
           <caret line="1" column="82" selection-start-line="1" selection-start-column="48" selection-end-line="1" selection-end-column="82" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#wicket:panel#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#wicket:panel#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1167,9 +1081,9 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="554" max-vertical-offset="2745">
           <caret line="75" column="78" selection-start-line="75" selection-start-column="61" selection-end-line="75" selection-end-column="78" />
           <folding>
-            <element signature="e#4440#4446#0" expanded="true" />
-            <element signature="e#4716#4722#0" expanded="true" />
-            <element signature="e#4993#4999#0" expanded="true" />
+            <element signature="e#4440#4446#0" expanded="false" />
+            <element signature="e#4716#4722#0" expanded="false" />
+            <element signature="e#4993#4999#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1182,22 +1096,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/domain/HibernateHotelRepo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1221" max-vertical-offset="1725">
-          <caret line="123" column="88" selection-start-line="123" selection-start-column="88" selection-end-line="123" selection-end-column="88" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/base/BasePage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4601227" vertical-offset="255" max-vertical-offset="1080">
-          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/common/PictureHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.53402364" vertical-offset="179" max-vertical-offset="855">
@@ -1206,13 +1104,131 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/HotelWicketSession.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.64349115" vertical-offset="90" max-vertical-offset="795">
+          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/base/SecuredPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.110946745" vertical-offset="0" max-vertical-offset="676">
+          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/comment/CommentFormPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.82100594" vertical-offset="0" max-vertical-offset="2580">
+          <caret line="55" column="53" selection-start-line="55" selection-start-column="53" selection-end-line="55" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/comment/CommentReportPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.088757396" vertical-offset="0" max-vertical-offset="1950">
+          <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelListPage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2760736" vertical-offset="0" max-vertical-offset="885">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/domain/HotelRepo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44378698" vertical-offset="0" max-vertical-offset="676">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelPhotoSliderPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.66568047" vertical-offset="150" max-vertical-offset="885">
+          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5325444" vertical-offset="2340" max-vertical-offset="4380">
+          <caret line="180" column="20" selection-start-line="180" selection-start-column="20" selection-end-line="180" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelListPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1079" max-vertical-offset="1755">
+          <caret line="123" column="16" selection-start-line="123" selection-start-column="16" selection-end-line="123" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/comment/DatePickerPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="111" max-vertical-offset="690">
+          <caret line="32" column="36" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
+          <folding>
+            <element signature="e#1086#1330#0" expanded="true" />
+            <element signature="e#1329#1330#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/domain/HibernateHotelRepo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.68650794" vertical-offset="1049" max-vertical-offset="1725">
+          <caret line="116" column="0" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/common/CaptchaImage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5952381" vertical-offset="0" max-vertical-offset="795">
+          <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/base/BasePage.utf8.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="135">
+          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/base/BasePage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.2916665" vertical-offset="428" max-vertical-offset="1065">
+          <caret line="37" column="50" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/base/BasePage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6079882" vertical-offset="1179" max-vertical-offset="2355">
-          <caret line="131" column="41" selection-start-line="131" selection-start-column="41" selection-end-line="131" selection-end-column="41" />
+        <state vertical-scroll-proportion="0.8810916" vertical-offset="808" max-vertical-offset="2700">
+          <caret line="90" column="26" selection-start-line="90" selection-start-column="26" selection-end-line="90" selection-end-column="26" />
           <folding>
-            <element signature="e#1514#1521#0" expanded="true" />
-            <element signature="e#4271#4277#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1516#1523#0" expanded="true" />
+            <element signature="e#4355#4361#0" expanded="true" />
           </folding>
         </state>
       </provider>

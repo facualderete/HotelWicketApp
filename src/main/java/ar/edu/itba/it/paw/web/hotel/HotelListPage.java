@@ -1,16 +1,12 @@
 package ar.edu.itba.it.paw.web.hotel;
 
-<<<<<<< HEAD
 import ar.edu.itba.it.paw.domain.*;
 import ar.edu.itba.it.paw.web.base.BasePage;
+import ar.edu.itba.it.paw.web.comment.CommentReportPage;
 import ar.edu.itba.it.paw.web.feedback.CustomFeedbackPanel;
 import ar.edu.itba.it.paw.web.hotel.form.HotelAutoCompleteField;
 import org.apache.wicket.ajax.AjaxRequestTarget;
 import org.apache.wicket.ajax.form.AjaxFormSubmitBehavior;
-=======
-import java.util.List;
-
->>>>>>> d1a7a1f12129e64a61f5a6cd3b2b4f6a9b97a5e2
 import org.apache.wicket.markup.html.basic.Label;
 import org.apache.wicket.markup.html.form.Form;
 import org.apache.wicket.markup.html.link.Link;
@@ -21,15 +17,7 @@ import org.apache.wicket.model.LoadableDetachableModel;
 import org.apache.wicket.request.mapper.parameter.PageParameters;
 import org.apache.wicket.spring.injection.annot.SpringBean;
 
-import ar.edu.itba.it.paw.domain.Destination;
-import ar.edu.itba.it.paw.domain.Hotel;
-import ar.edu.itba.it.paw.domain.HotelRepo;
-import ar.edu.itba.it.paw.domain.UserRepo;
-import ar.edu.itba.it.paw.web.HotelWicketSession;
-import ar.edu.itba.it.paw.web.base.BasePage;
-import ar.edu.itba.it.paw.web.comment.CommentReportPage;
-import ar.edu.itba.it.paw.web.samples.AutoCompletePage;
-import ar.edu.itba.it.paw.web.samples.DatePickerPage;
+import java.util.List;
 
 public class HotelListPage extends BasePage {
 
@@ -130,14 +118,10 @@ public class HotelListPage extends BasePage {
             }
         });
 
-<<<<<<< HEAD
         form.add(autoCompleteField);
         add(form);
-=======
-        };
 
-        add(datepickerpage);
-        
+        //TODO: sólo si es admin!!
         Link<Void> commentReportPage = new Link<Void>("commentreportpage") {
             @Override
             public void onClick() {
@@ -145,9 +129,7 @@ public class HotelListPage extends BasePage {
             }
 
         };
-        
         add(commentReportPage);
->>>>>>> d1a7a1f12129e64a61f5a6cd3b2b4f6a9b97a5e2
     }
 
     @Override

@@ -74,5 +74,10 @@
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.eclipse.jetty.orbit:javax.activation:1.1.0.v201105071233" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.eclipse.jetty.orbit:javax.annotation:1.1.0.v201108011116" level="project" />
     <orderEntry type="library" name="Maven: com.google.code:kaptcha:2.3.2" level="project" />
+    <orderEntry type="library" name="Maven: com.googlecode.wicked-charts:wicked-charts-wicket6:1.5.0" level="project" />
+    <orderEntry type="library" name="Maven: com.googlecode.wicked-charts:wicked-charts-highcharts:1.5.0" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.0.5" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.0.5" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.0.5" level="project" />
   </component>
 </module>

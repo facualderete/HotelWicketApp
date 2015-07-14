@@ -20,13 +20,8 @@ public interface HotelRepo extends HibernateRepo {
 	public Iterable<Comment> getCommentsOnHotel(Hotel hotel);
 
     public Picture getPicture(int pictureId);
-<<<<<<< HEAD
 
 	public Hotel getByName(String name);
 
 	public Hotel getAnyOutstanding();
-=======
-    
-    public Hotel getAnyOutstanding();
->>>>>>> d1a7a1f12129e64a61f5a6cd3b2b4f6a9b97a5e2
 }
