@@ -1,9 +1,12 @@
 package ar.edu.itba.it.paw.domain;
 
 import ar.edu.itba.it.paw.domain.filters.SearchHotelFilter;
+
 import org.hibernate.Criteria;
 import org.hibernate.Hibernate;
+import org.hibernate.Query;
 import org.hibernate.SessionFactory;
+import org.hibernate.criterion.Projection;
 import org.hibernate.criterion.ProjectionList;
 import org.hibernate.criterion.Projections;
 import org.hibernate.type.Type;
@@ -13,48 +16,72 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public class HibernateCommentRepo extends AbstractHibernateRepo implements CommentRepo {
+public class HibernateCommentRepo extends AbstractHibernateRepo implements
+		CommentRepo {
 
-    @Autowired
-    public HibernateCommentRepo(SessionFactory sessionFactory) {
-        super(sessionFactory);
-    }
+	@Autowired
+	public HibernateCommentRepo(SessionFactory sessionFactory) {
+		super(sessionFactory);
+	}
 
-    @Override
-    public List<Comment> getAll() {
-        return find("from Comment");
-    }
+	@Override
+	public List<Comment> getAll() {
+		return find("from Comment");
+	}
 
-    @Override
-    public Comment get(int commentId) {
-        return get(Comment.class, commentId);
-    }
+	@Override
+	public Comment get(int commentId) {
+		return get(Comment.class, commentId);
+	}
 
-    @Override
-    public Iterable<Comment> getAllFiltered(SearchHotelFilter filter) {
+	@Override
+	public List<Comment> getWithinRange(final String fromDate,
+			final String toDate) {
+		Query query = getSession().createQuery(
+				"select c from Comment c where c.commentDate between \'" + fromDate
+						+ "\' and \'" + toDate + "\'");
+		List<Comment> result = query.list();
+		return result;
+	}
 
-        Criteria criteria = getSession().createCriteria(Comment.class);
+	@Override
+	public Iterable<Comment> getAllFiltered(SearchHotelFilter filter) {
 
-//        criteria.add(Restrictions.between("commentDate", from.getTime(), to.getTime()));
+		Criteria criteria = getSession().createCriteria(Comment.class);
 
-        ProjectionList projectionList = Projections.projectionList();
+		// criteria.add(Restrictions.between("commentDate", from.getTime(),
+		// to.getTime()));
 
-//        projectionList.add(Projections.sqlGroupProjection(
-//                "extract(YEAR from commentDate) as year",
-//                "extract(YEAR from commentDate)",
-//                new String[]{"year"},
-//                new Type[] {Hibernate.INTEGER}));
+		ProjectionList projectionList = Projections.projectionList();
 
-        projectionList.add(Projections.sqlGroupProjection(
-                "extract(MONTH from commentDate) as month, extract(YEAR from commentDate) as year",
-                "extract(MONTH from commentDate), extract(YEAR from commentDate)",
-                new String[]{"month","year"},
-                new Type[] {Hibernate.INTEGER}));
+		// projectionList.add(Projections.sqlGroupProjection(
+		// "extract(YEAR from commentDate) as year",
+		// "extract(YEAR from commentDate)",
+		// new String[]{"year"},
+		// new Type[] {Hibernate.INTEGER}));
 
-        projectionList.add(Projections.count("id"));
+		projectionList
+				.add(Projections
+						.sqlGroupProjection(
+								"extract(MONTH from commentDate) as month, extract(YEAR from commentDate) as year",
+								"extract(MONTH from commentDate), extract(YEAR from commentDate)",
+								new String[] { "month", "year" },
+								new Type[] { Hibernate.INTEGER }));
 
-        criteria.setProjection(projectionList);
+		projectionList.add(Projections.count("id"));
 
-        return criteria.list();
-    }
+		criteria.setProjection(projectionList);
+
+		return criteria.list();
+	}
+
+	public void getCommentsGroupedBy() {
+		Criteria criteria = getSession().createCriteria(Comment.class);
+
+		// criteria.add(Restrictions.between("commentDate", from.getTime(),
+		// to.getTime()));
+
+		ProjectionList projectionList = Projections.projectionList();
+		// projectionList.add(Projections.)
+	}
 }

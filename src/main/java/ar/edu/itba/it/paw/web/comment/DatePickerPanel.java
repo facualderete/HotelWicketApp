@@ -38,6 +38,8 @@ public class DatePickerPanel extends Panel {
                 return "${calendar}.cfg.setProperty(\"navigator\",true,false); ${calendar}.render();";
             }
         };
+        
+
         fromDatePicker.setShowOnFieldClick(true);
         fromDatePicker.setAutoHide(true);
         fromDateTextField.add(fromDatePicker);
@@ -45,5 +47,9 @@ public class DatePickerPanel extends Panel {
 
     public Date getDate() {
         return this.date;
+    }
+    
+    public String getDateFormatted() {
+    	return dateConverter.convertToString(date, selectedLocale);
     }
 }

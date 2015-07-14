@@ -1,10 +1,12 @@
 package ar.edu.itba.it.paw.common;
 
 import ar.edu.itba.it.paw.web.HotelWicketSession;
+
 import com.google.code.kaptcha.Constants;
 import com.google.code.kaptcha.impl.DefaultKaptcha;
 import com.sun.image.codec.jpeg.JPEGCodec;
 import com.sun.image.codec.jpeg.JPEGImageEncoder;
+
 import org.apache.wicket.markup.html.image.NonCachingImage;
 import org.apache.wicket.request.resource.DynamicImageResource;
 import org.apache.wicket.spring.injection.annot.SpringBean;
