@@ -27,16 +27,13 @@ public class AddHotelPhotoPage extends SecuredPage {
     @SpringBean
     HotelRepo hotelRepo;
 
-    //sacar los transient
     private List<FileUpload> uploadingPicture;
     private Boolean isMain;
-    private final IModel<Hotel> hotel = new EntityModel<Hotel>(Hotel.class);
+    private final IModel<Hotel> hotelModel = new EntityModel<Hotel>(Hotel.class);
 
     public AddHotelPhotoPage(final PageParameters parameters) {
 
-        //Mala práctica... Cambiar por otra cosa.
-        // si no hay hotelId, mandar a otro lado
-        hotel.setObject(hotelRepo.get(parameters.get("hotelId").toInteger()));
+        hotelModel.setObject(hotelRepo.get(parameters.get("hotelId").toInteger()));
         final CheckBox isMain = new CheckBox("isMain", new PropertyModel<Boolean>(this, "isMain"));
 
         Form<AddHotelPhotoPage> form = new Form<AddHotelPhotoPage>(
@@ -48,7 +45,7 @@ public class AddHotelPhotoPage extends SecuredPage {
                 if (!uploadingPicture.isEmpty()) {
                     Picture newPicture = new Picture(PictureHelper.getImageBytes(uploadingPicture));
                     newPicture.setMain(isMain.getModelObject());
-                    Picture mainPic = hotel.getObject().getMainPic();
+                    Picture mainPic = hotelModel.getObject().getMainPic();
 
                     if(mainPic == null){
                         newPicture.setMain(true);
@@ -59,22 +56,22 @@ public class AddHotelPhotoPage extends SecuredPage {
                         newPicture.setMain(false);
                     }
 
-                    hotel.getObject().addPicture(newPicture);
+                    hotelModel.getObject().addPicture(newPicture);
                 }
-                hotelRepo.save(hotel.getObject());
-                setResponsePage(new HotelDetailPage(new PageParameters().set("hotelId", hotel.getObject().getId())));
+                hotelRepo.save(hotelModel.getObject());
+                setResponsePage(new HotelDetailPage(new PageParameters().set("hotelId", hotelModel.getObject().getId())));
             }
         };
 
         Link<Void> goBackLink = new Link<Void>("goBackLink") {
             @Override
             public void onClick() {
-                setResponsePage(new HotelDetailPage(new PageParameters().set("hotelId", hotel.getObject().getId())));
+                setResponsePage(new HotelDetailPage(new PageParameters().set("hotelId", hotelModel.getObject().getId())));
             }
         };
 
         add(goBackLink);
-        add(new Label("hotelNameTitle", hotel.getObject().getName() + " "));
+        add(new Label("hotelNameTitle", getString("title") + " " + getDecoratedHotelName(hotelModel.getObject())));
         form.add(new FileUploadField("uploadingPicture"));
         form.add(isMain);
         form.add(new Button("addPhoto", new ResourceModel("addPhoto")));
@@ -84,6 +81,6 @@ public class AddHotelPhotoPage extends SecuredPage {
     @Override
     protected void onDetach() {
         super.onDetach();
-        hotel.detach();
+        hotelModel.detach();
     }
 }

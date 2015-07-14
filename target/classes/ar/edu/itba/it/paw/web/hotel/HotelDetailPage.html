@@ -2,6 +2,8 @@
 
 <h2><span wicket:id="hotelNameTitle"></span></h2>
 
+<img wicket:id="photo" class="profile-picture">
+
 <div class="row">
     <div class="span1">
         <button wicket:id="toggleFavourite" class="btn">
@@ -13,21 +15,28 @@
             <i class="icon-off icon-white"></i>
         </button>
     </div>
-
-
-    <div class="span3">
+    <div class="span1">
+        <button wicket:id="toggleOutstanding" class="btn">
+            <i class="icon-star icon-white"></i>
+        </button>
+    </div>
+    <div class="span2">
+        <button wicket:id="editHotelLink" class="btn btn-danger">
+            <wicket:message key="editHotelLink">Edit hotel</wicket:message>
+        </button>
+    </div>
+    <div class="span2">
         <button wicket:id="addPhotoLink" class="btn btn-inverse">
             <wicket:message key="addPhotoLink">Add photo</wicket:message>
         </button>
     </div>
-
-    <div class="span3">
+</div>
+<div class="row">
+    <div class="span2">
         <button wicket:id="newCommentLink" class="btn btn-primary">
             <wicket:message key="newCommentLink">Leave a comment</wicket:message>
         </button>
     </div>
-
-
 </div>
 
 <table class="table table-striped">

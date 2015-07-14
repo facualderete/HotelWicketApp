@@ -11,7 +11,6 @@ import org.apache.wicket.request.Request;
 public class HotelWicketSession extends WebSession {
 
     private String userEmail;
-
     private IModel<User> user;
 
     public static HotelWicketSession get() {
@@ -51,8 +50,8 @@ public class HotelWicketSession extends WebSession {
         clear();
     }
 
-    public boolean isAdmin(UserRepo users){
-        return isSignedIn() && users.getByEmail(userEmail).getAdmin();
+    public boolean isAdmin(UserRepo userRepo){
+        return isSignedIn() && userRepo.getByEmail(userEmail).getAdmin();
     }
 
     protected void setUserEmailFromCookies(String userEmail) {

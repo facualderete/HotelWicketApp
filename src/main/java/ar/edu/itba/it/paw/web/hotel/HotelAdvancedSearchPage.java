@@ -5,7 +5,6 @@ import ar.edu.itba.it.paw.domain.HotelRepo;
 import ar.edu.itba.it.paw.domain.UserRepo;
 import ar.edu.itba.it.paw.domain.definitions.HotelType;
 import ar.edu.itba.it.paw.domain.filters.SearchHotelFilter;
-import ar.edu.itba.it.paw.web.HotelWicketSession;
 import ar.edu.itba.it.paw.web.base.BasePage;
 import org.apache.wicket.ajax.AjaxRequestTarget;
 import org.apache.wicket.ajax.markup.html.form.AjaxSubmitLink;
@@ -137,7 +136,7 @@ public class HotelAdvancedSearchPage extends BasePage {
         final IModel<List<Hotel>> hotelsListModel = new LoadableDetachableModel<List<Hotel>>() {
             @Override
             protected List<Hotel> load() {
-                return (List<Hotel>)hotelRepo.getAllFiltered(searchHotelFilter, HotelWicketSession.get().isAdmin(userRepo));
+                return (List<Hotel>)hotelRepo.getAllFiltered(searchHotelFilter, IS_ADMIN);
             }
         };
 
@@ -156,7 +155,7 @@ public class HotelAdvancedSearchPage extends BasePage {
                     }
                 };
 
-                hotelDetailLink.add(new Label("hotelName", hotel.getName()));
+                hotelDetailLink.add(new Label("hotelName", getDecoratedHotelName(hotel)));
 
                 item.add(hotelDetailLink);
             }

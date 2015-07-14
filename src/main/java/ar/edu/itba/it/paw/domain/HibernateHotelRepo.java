@@ -112,4 +112,21 @@ public class HibernateHotelRepo extends AbstractHibernateRepo implements
     public Picture getPicture(int pictureId) {
         return get(Picture.class, pictureId);
     }
+
+	public Hotel getByName(String name) {
+		List<Hotel> result = find("from Hotel where name = ?", name);
+		return result.size() > 0 ? result.get(0) : null;
+	}
+
+	@Override
+	public Hotel getAnyOutstanding() {
+		List<Hotel> result = find("from Hotel where outstanding = true");
+		return result.size() > 0 ? result.get((int)(Math.random()*result.size())) : null;
+	}//TODO: query para agregar la columna:
+	/*
+	ALTER TABLE hotel
+	ADD COLUMN outstanding boolean
+	UPDATE hotel
+	SET outstanding = false
+	 */
 }

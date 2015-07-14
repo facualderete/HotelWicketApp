@@ -1,5 +1,6 @@
 package ar.edu.itba.it.paw.web.hotel;
 
+import ar.edu.itba.it.paw.common.PictureHelper;
 import ar.edu.itba.it.paw.domain.*;
 import ar.edu.itba.it.paw.web.HotelWicketSession;
 import ar.edu.itba.it.paw.web.base.BasePage;
@@ -9,6 +10,7 @@ import org.apache.wicket.AttributeModifier;
 import org.apache.wicket.ajax.AjaxRequestTarget;
 import org.apache.wicket.ajax.markup.html.AjaxLink;
 import org.apache.wicket.markup.html.basic.Label;
+import org.apache.wicket.markup.html.image.Image;
 import org.apache.wicket.markup.html.link.ExternalLink;
 import org.apache.wicket.markup.html.link.Link;
 import org.apache.wicket.model.IModel;
@@ -18,7 +20,6 @@ import org.apache.wicket.spring.injection.annot.SpringBean;
 
 import java.util.LinkedList;
 import java.util.List;
-import java.util.SortedSet;
 
 
 public class HotelDetailPage extends BasePage {
@@ -37,7 +38,12 @@ public class HotelDetailPage extends BasePage {
     public HotelDetailPage(final PageParameters parameters){
 
         hotelModel.setObject(hotelRepo.get(parameters.get("hotelId").toInteger()));
-        userModel.setObject(userRepo.getByEmail(HotelWicketSession.get().getUserEmail()));
+
+        add(new Image("photo", PictureHelper.getHotelPicture(hotelModel.getObject(), "1")));
+
+        if (HotelWicketSession.get().isSignedIn()) {
+            userModel.setObject(userRepo.getByEmail(HotelWicketSession.get().getUserEmail()));
+        }
 
         final AjaxLink toggleFavouriteLink = new AjaxLink("toggleFavourite") {
             @Override
@@ -49,8 +55,6 @@ public class HotelDetailPage extends BasePage {
                     this.add(new AttributeModifier("class", "btn btn-danger"));
                     userModel.getObject().addFavourite(hotelModel.getObject());
                 }
-
-                userRepo.save(userModel.getObject());
                 target.add(this);
             }
         };
@@ -65,8 +69,20 @@ public class HotelDetailPage extends BasePage {
                     this.add(new AttributeModifier("class", "btn btn-success"));
                     hotelModel.getObject().setActive(true);
                 }
+                target.add(this);
+            }
+        };
 
-                hotelRepo.save(hotelModel.getObject());
+        final AjaxLink toggleOutstandingLink = new AjaxLink("toggleOutstanding") {
+            @Override
+            public void onClick(AjaxRequestTarget target) {
+                if(hotelModel.getObject().getOutstanding()){
+                    this.add(new AttributeModifier("class", "btn btn-danger"));
+                    hotelModel.getObject().setOutstanding(false);
+                }else{
+                    this.add(new AttributeModifier("class", "btn btn-success"));
+                    hotelModel.getObject().setOutstanding(true);
+                }
                 target.add(this);
             }
         };
@@ -83,6 +99,12 @@ public class HotelDetailPage extends BasePage {
             toggleActiveLink.add(new AttributeModifier("class", "btn btn-danger"));
         }
 
+        if (hotelModel.getObject().getOutstanding()) {
+            toggleOutstandingLink.add(new AttributeModifier("class", "btn btn-success"));
+        } else {
+            toggleOutstandingLink.add(new AttributeModifier("class", "btn btn-danger"));
+        }
+
         Link<Void> newCommentLink = new Link<Void>("newCommentLink") {
             @Override
             public void onClick() {
@@ -97,19 +119,37 @@ public class HotelDetailPage extends BasePage {
             }
         };
 
-        if (userModel.getObject() == null || !userModel.getObject().getAdmin()) {
+        Link<Void> editHotelLink = new Link<Void>("editHotelLink") {
+            @Override
+            public void onClick() {
+                setResponsePage(new HotelFormPage(new PageParameters().set("hotelId", hotelModel.getObject().getId())));
+            }
+        };
+
+        if (!HotelWicketSession.get().isSignedIn()) {
+            newCommentLink.setVisible(false);
             toggleFavouriteLink.setVisible(false);
             toggleActiveLink.setVisible(false);
-            newCommentLink.setVisible(false);
             addPhotoLink.setVisible(false);
+            editHotelLink.setVisible(false);
+            toggleOutstandingLink.setVisible(false);
+        }
+
+        if (HotelWicketSession.get().isSignedIn() && !userModel.getObject().getAdmin()) {
+            toggleActiveLink.setVisible(false);
+            addPhotoLink.setVisible(false);
+            editHotelLink.setVisible(false);
+            toggleOutstandingLink.setVisible(false);
         }
 
         add(toggleFavouriteLink);
         add(toggleActiveLink);
         add(addPhotoLink);
         add(newCommentLink);
+        add(editHotelLink);
+        add(toggleOutstandingLink);
 
-        add(new Label("hotelNameTitle", hotelModel.getObject().getName()));
+        add(new Label("hotelNameTitle", getDecoratedHotelName(hotelModel.getObject())));
         add(new Label("hotelCategory", hotelModel.getObject().getCategory()));
         add(new Label("hotelType", hotelModel.getObject().getType()));
         add(new Label("hotelPrice", hotelModel.getObject().getPrice()));
@@ -117,14 +157,8 @@ public class HotelDetailPage extends BasePage {
         add(new Label("hotelAddress", hotelModel.getObject().getAddress()));
         add(new Label("hotelPhone", hotelModel.getObject().getPhone()));
         add(new ExternalLink("hotelWebsite", "http://" + hotelModel.getObject().getWebsite(), hotelModel.getObject().getWebsite()));
-        String breakfastLabel;
-        if(hotelModel.getObject().getBreakfast()){
-            breakfastLabel = "breakfast_included";
-        }else{
-            breakfastLabel = "breakfast_not_included";
-        }
-
-        add(new Label("hotelBreakfast", this.getString(breakfastLabel)));
+        String breakfast = hotelModel.getObject().getBreakfast() ? BREAKFAST_INCLUDED : BREAKFAST_NOT_INCLUDED;
+        add(new Label("hotelBreakfast", breakfast));
         add(new Label("hotelViews", hotelModel.getObject().getAccessCounter()));
 
         HotelEvaluation evaluation = hotelModel.getObject().getEvaluation();
@@ -139,12 +173,17 @@ public class HotelDetailPage extends BasePage {
         final IModel<List<Comment>> commentsListModel = new LoadableDetachableModel<List<Comment>>() {
             @Override
             protected List<Comment> load() {
-                //TODO: esto es una villereada...
-                return new LinkedList<Comment>((SortedSet<Comment>)hotelRepo.getCommentsOnHotel(hotelModel.getObject()));
+                if (IS_ADMIN) {
+                    return new LinkedList<Comment>(hotelModel.getObject().getComments());
+                } else {
+                    return new LinkedList<Comment>(hotelModel.getObject().getFilteredComments());
+                }
             }
         };
 
-        add(new CommentListPanel("commentListPanel", commentsListModel));
+        CommentListPanel commentListPanel = new CommentListPanel("commentListPanel", commentsListModel, userModel);
+        if (commentsListModel.getObject().isEmpty()) commentListPanel.setVisible(false);
+        add(commentListPanel);
         HotelPhotoSliderPanel photoSliderPanel = new HotelPhotoSliderPanel("slider", hotelModel);
         if (hotelModel.getObject().getPictures().size() == 0) photoSliderPanel.setVisible(false);
         add(photoSliderPanel);

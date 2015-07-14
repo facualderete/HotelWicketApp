@@ -1,16 +1,27 @@
 <wicket:extend>
     <h2><wicket:message key="title">Hoteles más comentados</wicket:message></h2>
 
-    <button wicket:message key="addHotelButton" class="btn btn-success">Agregar nuevo hotel</button>
+    <div wicket:id="feedbackPanel"></div>
+
+    <button wicket:id="addHotelLink" class="btn btn-success">
+        <wicket:message key="addHotelLink">Add new hotel</wicket:message>
+    </button>
 
     <button wicket:id="advancedSearchLink" class="btn btn-primary">
         <wicket:message key="advancedSearchLink">Advanced search</wicket:message>
     </button>
-
-    <button wicket:id="autocompletepage" class="btn btn-primary">Autocomplete</button>
-
-    <button wicket:id="datepickerpage" class="btn btn-primary">DatePicker</button>
-
+    <br/>
+    <br/>
+    <form wicket:id="autoCompleteForm">
+        <div class="control-group">
+            <label class="control-label" for="autoCompleteField">
+                <wicket:message key="autoCompleteField">Quick Search</wicket:message>
+            </label>
+            <div class="controls">
+                <input type="text" wicket:id="autoCompleteField" size="50"/>
+            </div>
+        </div>
+    </form>
 
     <table class="table table-striped">
         <thead>
@@ -33,7 +44,7 @@
 
     <h2><wicket:message key="destinations_title">Destinos</wicket:message></h2>
     <dl wicket:id="destinationsList">
-        <dt><span wicket:id="destinationName"></span></dt>
+        <dt><a href="#" wicket:id="destinationPageLink"><span wicket:id="destinationName"></span></a></dt>
     </dl>
 
 

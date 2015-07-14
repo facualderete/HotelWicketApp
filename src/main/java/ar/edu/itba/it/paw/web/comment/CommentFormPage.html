@@ -8,7 +8,7 @@
 
             <h2><wicket:message key="title">New Comment</wicket:message></h2>
 
-            <!--<div wicket:id="feedbackPanel" class="alert alert-error"></div>-->
+            <div wicket:id="feedbackPanel"></div>
 
             <form wicket:id="commentForm" method="post" class="form-horizontal" enctype="multipart/form-data">
 
@@ -57,7 +57,7 @@
                         <wicket:message key="comment">Comment</wicket:message>
                     </label>
                     <div class="controls">
-                        <textarea rows="3" wicket:id="details"></textarea>
+                        <textarea rows="3" wicket:id="comment"></textarea>
                     </div>
                 </div>
 

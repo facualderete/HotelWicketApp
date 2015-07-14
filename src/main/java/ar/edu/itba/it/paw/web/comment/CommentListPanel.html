@@ -5,6 +5,7 @@
     <table class="table table-striped">
         <thead>
         <tr>
+            <th></th>
             <th><wicket:message key="header_from">Higiene</wicket:message></th>
             <th><wicket:message key="header_to">Higiene</wicket:message></th>
             <th><wicket:message key="header_comment_date">Higiene</wicket:message></th>
@@ -23,7 +24,14 @@
         </thead>
         <tbody>
         <tr wicket:id="commentsList">
-            <td><input type="button" wicket:id="button"></input></td>
+            <td>
+                <button wicket:id="toggleForbidden" class="btn">
+                    <i class="icon-exclamation-sign icon-white"></i>
+                </button>
+                <button wicket:id="deleteComment" class="btn btn-danger">
+                    <i class="icon-trash"></i>
+                </button>
+            </td>
             <td><span wicket:id="fromDate"></span></td>
             <td><span wicket:id="toDate"></span></td>
             <td><span wicket:id="commentDate"></span></td>
@@ -37,7 +45,10 @@
             <td><span wicket:id="price"></span></td>
             <td><span wicket:id="comfort"></span></td>
             <td><span wicket:id="general"></span></td>
-            <td><a href="#" wicket:id="userProfileLink"><span wicket:id="userEmail"></span></a></td>
+            <td>
+                <a href="#" wicket:id="userProfileLink"><span wicket:id="userEmail"></span></a>
+                <button wicket:id="editComment" class="btn btn-primary"><wicket:message key="edit_comment">Edit comment</wicket:message></button>
+            </td>
         </tr>
         </tbody>
     </table>

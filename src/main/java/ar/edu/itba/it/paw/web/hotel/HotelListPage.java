@@ -1,14 +1,13 @@
 package ar.edu.itba.it.paw.web.hotel;
 
-import ar.edu.itba.it.paw.domain.Destination;
-import ar.edu.itba.it.paw.domain.Hotel;
-import ar.edu.itba.it.paw.domain.HotelRepo;
-import ar.edu.itba.it.paw.domain.UserRepo;
-import ar.edu.itba.it.paw.web.samples.AutoCompletePage;
-import ar.edu.itba.it.paw.web.samples.DatePickerPage;
-import ar.edu.itba.it.paw.web.HotelWicketSession;
+import ar.edu.itba.it.paw.domain.*;
 import ar.edu.itba.it.paw.web.base.BasePage;
+import ar.edu.itba.it.paw.web.feedback.CustomFeedbackPanel;
+import ar.edu.itba.it.paw.web.hotel.form.HotelAutoCompleteField;
+import org.apache.wicket.ajax.AjaxRequestTarget;
+import org.apache.wicket.ajax.form.AjaxFormSubmitBehavior;
 import org.apache.wicket.markup.html.basic.Label;
+import org.apache.wicket.markup.html.form.Form;
 import org.apache.wicket.markup.html.link.Link;
 import org.apache.wicket.markup.html.list.ListItem;
 import org.apache.wicket.markup.html.list.ListView;
@@ -19,7 +18,7 @@ import org.apache.wicket.spring.injection.annot.SpringBean;
 
 import java.util.List;
 
-public class HotelListPage extends BasePage{
+public class HotelListPage extends BasePage {
 
     private static final int LIST_SIZE = 5;
 
@@ -31,14 +30,27 @@ public class HotelListPage extends BasePage{
     @SpringBean
     private UserRepo userRepo;
 
+    private final IModel<Hotel> hotelSearchModel = new EntityModel<Hotel>(Hotel.class);
+
     public HotelListPage() {
+
+        add(new CustomFeedbackPanel("feedbackPanel"));
 
         final IModel<List<Hotel>> hotelsListModel = new LoadableDetachableModel<List<Hotel>>() {
             @Override
             protected List<Hotel> load() {
-                return (List<Hotel>)hotelRepo.getNHotelsOrderedByComments(LIST_SIZE, HotelWicketSession.get().isAdmin(userRepo));
+                return (List<Hotel>)hotelRepo.getNHotelsOrderedByComments(LIST_SIZE, IS_ADMIN);
             }
         };
+
+        Link<Void> addHotelLink = new Link<Void>("addHotelLink") {
+            @Override
+            public void onClick() {
+                setResponsePage(new HotelFormPage(new PageParameters()));
+            }
+        };
+        if(!IS_ADMIN) addHotelLink.setVisible(false);
+        add(addHotelLink);
 
         add(new ListView<Hotel>("hotelsList", hotelsListModel) {
             @Override
@@ -55,7 +67,7 @@ public class HotelListPage extends BasePage{
                     }
                 };
 
-                hotelDetailLink.add(new Label("hotelName", hotel.getName()));
+                hotelDetailLink.add(new Label("hotelName", getDecoratedHotelName(hotel)));
 
                 item.add(hotelDetailLink);
             }
@@ -71,10 +83,17 @@ public class HotelListPage extends BasePage{
         add(new ListView<Destination>("destinationsList", destinationsListModel) {
             @Override
             protected void populateItem(ListItem<Destination> item) {
+                final Integer destinationId = item.getModelObject().getId();
 
-                Destination destination = item.getModelObject();
-                //TODO: esto debería ser un link al detalle del destino.
-                item.add(new Label("destinationName", destination.getDestination()));
+                Link<Void> destinationPageLink = new Link<Void>("destinationPageLink") {
+                    @Override
+                    public void onClick() {
+                        setResponsePage(new DestinationPage(new PageParameters().set("destinationId", destinationId)));
+                    }
+
+                };
+                destinationPageLink.add(new Label("destinationName", item.getModelObject().getDestination()));
+                item.add(destinationPageLink);
             }
         });
 
@@ -84,27 +103,27 @@ public class HotelListPage extends BasePage{
             }
         });
 
-        Link<Void> autocompletepage = new Link<Void>("autocompletepage") {
+        Form<Void> form = new Form<Void>("autoCompleteForm");
+
+        HotelAutoCompleteField autoCompleteField = new HotelAutoCompleteField("autoCompleteField", hotelSearchModel);
+        autoCompleteField.add(new AjaxFormSubmitBehavior(form, "change") {
             @Override
-            public void onClick() {
-                setResponsePage(AutoCompletePage.class);
+            protected void onSubmit(AjaxRequestTarget target) {
+                if (hotelSearchModel.getObject() == null) {
+                    error(getString("invalid_hotel_name_error"));
+                } else {
+                    setResponsePage(new HotelDetailPage(new PageParameters().set("hotelId", hotelSearchModel.getObject().getId())));
+                }
             }
+        });
 
-        };
-
-        add(autocompletepage);
-
-        Link<Void> datepickerpage = new Link<Void>("datepickerpage") {
-            @Override
-            public void onClick() {
-                setResponsePage(DatePickerPage.class);
-            }
-
-        };
-
-        add(datepickerpage);
+        form.add(autoCompleteField);
+        add(form);
     }
 
-
-
+    @Override
+    protected void onDetach() {
+        super.onDetach();
+        hotelSearchModel.detach();
+    }
 }

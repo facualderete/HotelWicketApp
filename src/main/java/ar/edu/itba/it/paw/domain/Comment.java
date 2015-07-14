@@ -155,9 +155,11 @@ public class Comment extends PersistentEntity implements Comparable<Comment>{
 		return true;
 	}
 
-
-
     public int compareTo(Comment o) {
-        return this.commentDate.compareTo(o.commentDate);
+		if (this.commentDate.compareTo(o.commentDate) == 0) {
+			return Integer.compare(this.getId(), o.getId());
+		} else {
+			return this.commentDate.compareTo(o.commentDate);
+		}
     }
 }

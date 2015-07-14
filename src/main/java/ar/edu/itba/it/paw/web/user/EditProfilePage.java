@@ -51,8 +51,7 @@ public class EditProfilePage  extends SecuredPage {
             protected void onSubmit() {
                 if (password != null && password2 != null && !password.equals(password2)) {
                     error(getString("password_nonmatch"));
-                }
-                else {
+                } else {
                     if (password != null && password2 != null) {
                         userModel.getObject().setPassword(password);
                     }

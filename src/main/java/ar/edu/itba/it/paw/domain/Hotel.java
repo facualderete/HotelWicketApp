@@ -23,6 +23,7 @@ public class Hotel extends PersistentEntity implements Comparable<Hotel> {
 	private boolean breakfast;
 	private boolean active;
 	private int accessCounter;
+	private boolean outstanding;
 
 	@OneToMany
     @Cascade({org.hibernate.annotations.CascadeType.DELETE_ORPHAN, org.hibernate.annotations.CascadeType.ALL})
@@ -58,8 +59,17 @@ public class Hotel extends PersistentEntity implements Comparable<Hotel> {
 		this.website = website;
 		this.breakfast = breakfast;
 		this.active = true;
+		this.outstanding = false;
 		this.accessCounter = 0;
         this.destination = destination;
+	}
+
+	public boolean getOutstanding() {
+		return outstanding;
+	}
+
+	public void setOutstanding(boolean outstanding) {
+		this.outstanding = outstanding;
 	}
 
 	public SortedSet<Comment> getComments() {
@@ -133,7 +143,6 @@ public class Hotel extends PersistentEntity implements Comparable<Hotel> {
 	public void setPrice(int price) {
 		this.price = price;
 	}
-
 
 	public void setAddress(String address) {
 		this.address = address;
@@ -258,4 +267,9 @@ public class Hotel extends PersistentEntity implements Comparable<Hotel> {
         }
         return filteredComments;
     }
+
+	@Override
+	public String toString() {
+		return this.name;
+	}
 }

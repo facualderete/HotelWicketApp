@@ -48,6 +48,18 @@ public class User extends PersistentEntity{
     public SortedSet<Comment> getComments() {
         return comments;
     }
+
+    public SortedSet<Comment> getFilteredComments() {
+
+        SortedSet<Comment> filteredComments = new TreeSet<Comment>();
+
+        for(Comment c : this.comments){
+            if(!c.getForbidden()){
+                filteredComments.add(c);
+            }
+        }
+        return filteredComments;
+    }
     
     public Map<Hotel, List<Comment>> getCommentsByHotel(){
     	 Map<Hotel, List<Comment>> result = new HashMap<Hotel, List<Comment>>();

@@ -27,7 +27,6 @@ public class HotelPhotoSliderPanel extends Panel{
         final IModel<List<Picture>> picturesListModel = new LoadableDetachableModel<List<Picture>>() {
             @Override
             protected List<Picture> load() {
-                //TODO: esto es una villereada...
                 return new LinkedList<Picture>(hotelModel.getObject().getPictures());
             }
         };
@@ -38,22 +37,25 @@ public class HotelPhotoSliderPanel extends Panel{
 
                 Integer index = item.getIndex();
 
-                final Picture picture = item.getModelObject();
-
-                Image image = new Image("photo", new ImageResourceReference(picture.getPicture(), index.toString()));
+                Image image = new Image("photo", new ImageResourceReference(item.getModelObject().getPicture(), index.toString()));
 
 
                 Link setMainLink = new Link("setMainLink") {
                     public void onClick() {
                         hotelModel.getObject().getMainPic().setMain(false);
-                        hotelModel.getObject().getPicture(picture).setMain(true);
+                        hotelModel.getObject().getPicture(item.getModelObject()).setMain(true);
+                        setResponsePage(getPage());
                     }
                 };
 
                 Link deleteLink = new Link("deleteLink") {
                     public void onClick() {
-                        //TODO: si era la main, poner a otra como principal
-                        hotelModel.getObject().removePicture(picture);
+                        boolean isMain = item.getModelObject().getMain();
+                        hotelModel.getObject().removePicture(item.getModelObject());
+                        if (isMain && hotelModel.getObject().getPictures().size() > 0) {
+                            hotelModel.getObject().getPictures().get(0).setMain(true);
+                        }
+                        setResponsePage(getPage());
                     }
                 };
 

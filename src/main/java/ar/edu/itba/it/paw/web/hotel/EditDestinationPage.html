@@ -1,0 +1,52 @@
+<wicket:extend>
+
+    <div class="row">
+        <div class="container">
+
+            <h2><span wicket:id="title"></span></h2>
+
+            <div wicket:id="feedbackPanel"></div>
+
+            <form wicket:id="editProfileForm" method="post" class="form-horizontal" enctype="multipart/form-data">
+
+                <div class="control-group">
+                    <label class="control-label" for="details">
+                        <wicket:message key="details">Details</wicket:message>
+                    </label>
+                    <div class="controls">
+                        <textarea rows="3" wicket:id="details"></textarea>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="uploadingPicture">
+                        <wicket:message key="uploadingPicture">Foto de destino</wicket:message>
+                    </label>
+                    <div class="controls">
+                        <input type="file" name="uploadingPicture" wicket:id="uploadingPicture"/>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="removePicture">
+                        <wicket:message key="removePicture">Borrar foto</wicket:message>
+                    </label>
+                    <div class="controls">
+                        <input type="checkbox" wicket:id="removePicture" />
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <div class="controls">
+                        <button wicket:id="submit" type="submit" class="btn btn-primary">
+                            <wicket:message key="submit">Submit</wicket:message>
+                        </button>
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+
+</wicket:extend>

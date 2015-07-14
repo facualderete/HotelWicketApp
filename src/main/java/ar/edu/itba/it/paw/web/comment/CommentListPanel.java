@@ -2,28 +2,32 @@ package ar.edu.itba.it.paw.web.comment;
 
 import ar.edu.itba.it.paw.common.DateHelper;
 import ar.edu.itba.it.paw.domain.Comment;
-import ar.edu.itba.it.paw.domain.EntityModel;
 import ar.edu.itba.it.paw.domain.User;
+import ar.edu.itba.it.paw.domain.UserRepo;
+import ar.edu.itba.it.paw.web.HotelWicketSession;
 import ar.edu.itba.it.paw.web.user.ProfilePage;
-import org.apache.wicket.ajax.AjaxEventBehavior;
+import org.apache.wicket.AttributeModifier;
 import org.apache.wicket.ajax.AjaxRequestTarget;
+import org.apache.wicket.ajax.markup.html.AjaxLink;
 import org.apache.wicket.markup.html.basic.Label;
-import org.apache.wicket.markup.html.form.Button;
 import org.apache.wicket.markup.html.link.Link;
 import org.apache.wicket.markup.html.list.ListItem;
 import org.apache.wicket.markup.html.list.ListView;
 import org.apache.wicket.markup.html.panel.Panel;
 import org.apache.wicket.model.IModel;
 import org.apache.wicket.request.mapper.parameter.PageParameters;
+import org.apache.wicket.spring.injection.annot.SpringBean;
 
 import java.util.List;
 
 public class CommentListPanel extends Panel {
 
-    IModel<User> userModel = new EntityModel<User>(User.class);
-    IModel<Comment> commentModel = new EntityModel<Comment>(Comment.class);
+    @SpringBean
+    UserRepo userRepo;
 
-    public CommentListPanel(String id, IModel<List<Comment>> commentListModel) {
+    private final boolean IS_ADMIN = HotelWicketSession.get().isAdmin(userRepo);
+
+    public CommentListPanel(String id, final IModel<List<Comment>> commentListModel, final IModel<User> userModel) {
         super(id, commentListModel);
 
         Label noCommentsLabel = new Label("noCommentsTitle", this.getString("title_no_comments"));
@@ -36,40 +40,81 @@ public class CommentListPanel extends Panel {
             @Override
             protected void populateItem(final ListItem<Comment> item) {
 
-                commentModel.setObject(item.getModelObject());
-                userModel.setObject(commentModel.getObject().getUser());
-
-                Button button = new Button("button");
-                button.add(new AjaxEventBehavior("onclick") {
+                final AjaxLink deleteCommentLink = new AjaxLink("deleteComment") {
                     @Override
-                    protected void onEvent(final AjaxRequestTarget target) {
-                        System.out.println("Event");
-                    }
-                });
-                item.add(button);
-
-                item.add(new Label("fromDate", DateHelper.getStringFromDate(commentModel.getObject().getFromDate())));
-                item.add(new Label("toDate", DateHelper.getStringFromDate(commentModel.getObject().getToDate())));
-                item.add(new Label("commentDate", DateHelper.getStringFromDate(commentModel.getObject().getCommentDate())));
-                item.add(new Label("reason", commentModel.getObject().getReason()));
-                item.add(new Label("companions", commentModel.getObject().getCompanions()));
-                item.add(new Label("details", commentModel.getObject().getDetails()));
-                item.add(new Label("hygiene", commentModel.getObject().getRating().getHygiene() == 0 ? "-" : commentModel.getObject().getRating().getHygiene()));
-                item.add(new Label("facilities", commentModel.getObject().getRating().getFacilities() == 0 ? "-" : commentModel.getObject().getRating().getFacilities()));
-                item.add(new Label("service", commentModel.getObject().getRating().getService() == 0 ? "-" : commentModel.getObject().getRating().getService()));
-                item.add(new Label("location", commentModel.getObject().getRating().getLocation() == 0 ? "-" : commentModel.getObject().getRating().getLocation()));
-                item.add(new Label("price", commentModel.getObject().getRating().getPrice() == 0 ? "-" : commentModel.getObject().getRating().getPrice()));
-                item.add(new Label("comfort", commentModel.getObject().getRating().getComfort() == 0 ? "-" : commentModel.getObject().getRating().getComfort()));
-                item.add(new Label("general", commentModel.getObject().getRating().getAverageRating() == 0 ? "-" : commentModel.getObject().getRating().getAverageRating()));
-
-                Link userProfileLink = new Link("userProfileLink"){
-                    public void onClick(){
-                        setResponsePage(new ProfilePage(new PageParameters().set("userEmail", userModel.getObject().getEmail())));
+                    public void onClick(AjaxRequestTarget target) {
+                        item.getModelObject().getUser().getComments().remove(item.getModelObject());
+                        target.add(this);
+                        setResponsePage(getPage());
                     }
                 };
 
-                userProfileLink.add(new Label("userEmail", commentModel.getObject().getUser().getEmail()));
+                if (!IS_ADMIN) deleteCommentLink.setVisible(false);
+                item.add(deleteCommentLink);
+
+                final AjaxLink toggleForbiddenLink = new AjaxLink("toggleForbidden") {
+                    @Override
+                    public void onClick(AjaxRequestTarget target) {
+                        if(item.getModelObject().getForbidden()){
+                            this.add(new AttributeModifier("class", "btn btn-warning"));
+                            item.getModelObject().setForbidden(false);
+                        }else{
+                            this.add(new AttributeModifier("class", "btn btn-success"));
+                            item.getModelObject().setForbidden(true);
+                            if (!IS_ADMIN) setResponsePage(getPage());
+                        }
+
+                        target.add(this);
+                    }
+                };
+
+                if (item.getModelObject().getForbidden()) {
+                    toggleForbiddenLink.add(new AttributeModifier("class", "btn btn-success"));
+                } else {
+                    toggleForbiddenLink.add(new AttributeModifier("class", "btn btn-warning"));
+                }
+
+                if (!HotelWicketSession.get().isSignedIn() ||
+                        (item.getModelObject().getUser().equals(HotelWicketSession.get().getUser())) && !IS_ADMIN) toggleForbiddenLink.setVisible(false);
+                item.add(toggleForbiddenLink);
+
+                item.add(new Label("fromDate", DateHelper.getStringFromDate(item.getModelObject().getFromDate())));
+                item.add(new Label("toDate", DateHelper.getStringFromDate(item.getModelObject().getToDate())));
+                item.add(new Label("commentDate", DateHelper.getStringFromDate(item.getModelObject().getCommentDate())));
+                item.add(new Label("reason", item.getModelObject().getReason()));
+                item.add(new Label("companions", item.getModelObject().getCompanions()));
+                item.add(new Label("details", item.getModelObject().getDetails()));
+                item.add(new Label("hygiene", item.getModelObject().getRating().getHygiene() == 0 ? "-" : item.getModelObject().getRating().getHygiene()));
+                item.add(new Label("facilities", item.getModelObject().getRating().getFacilities() == 0 ? "-" : item.getModelObject().getRating().getFacilities()));
+                item.add(new Label("service", item.getModelObject().getRating().getService() == 0 ? "-" : item.getModelObject().getRating().getService()));
+                item.add(new Label("location", item.getModelObject().getRating().getLocation() == 0 ? "-" : item.getModelObject().getRating().getLocation()));
+                item.add(new Label("price", item.getModelObject().getRating().getPrice() == 0 ? "-" : item.getModelObject().getRating().getPrice()));
+                item.add(new Label("comfort", item.getModelObject().getRating().getComfort() == 0 ? "-" : item.getModelObject().getRating().getComfort()));
+                item.add(new Label("general", item.getModelObject().getRating().getAverageRating() == 0 ? "-" : item.getModelObject().getRating().getAverageRating()));
+
+                Link userProfileLink = new Link("userProfileLink"){
+                    public void onClick(){
+                        setResponsePage(new ProfilePage(new PageParameters().set("userEmail", item.getModelObject().getUser().getEmail())));
+                    }
+                };
+
+                userProfileLink.add(new Label("userEmail", item.getModelObject().getUser().getEmail()));
                 item.add(userProfileLink);
+
+                Link<Void> editComment = new Link<Void>("editComment") {
+                    private static final long serialVersionUID = 1L;
+
+                    @Override
+                    public void onClick() {
+                        setResponsePage(new CommentFormPage(new PageParameters().set("commentId", item.getModelObject().getId())));
+                    }
+                };
+
+                if (!item.getModelObject().getUser().equals(userModel.getObject())) {
+                    editComment.setVisible(false);
+                }
+
+                item.add(editComment);
             }
         };
 
@@ -80,12 +125,5 @@ public class CommentListPanel extends Panel {
             commentsLabel.setVisible(true);
             commentListView.setVisible(true);
         }
-    }
-
-    @Override
-    protected void onDetach() {
-        super.onDetach();
-        userModel.detach();
-        commentModel.detach();
     }
 }

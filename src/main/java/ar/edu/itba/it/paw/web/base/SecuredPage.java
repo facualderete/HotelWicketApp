@@ -10,7 +10,6 @@ public abstract class SecuredPage extends BasePage{
         HotelWicketSession session = getHotelAppSession();
         if (!session.isSignedIn()) {
             redirectToInterceptPage(new LoginPage());
-
         }
     }
 
