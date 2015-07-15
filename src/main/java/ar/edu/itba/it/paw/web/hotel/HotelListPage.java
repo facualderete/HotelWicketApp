@@ -121,15 +121,15 @@ public class HotelListPage extends BasePage {
         form.add(autoCompleteField);
         add(form);
 
-        //TODO: sólo si es admin!!
-        Link<Void> commentReportPage = new Link<Void>("commentreportpage") {
+        Link<Void> commentReportLink = new Link<Void>("commentReportLink") {
             @Override
             public void onClick() {
                 setResponsePage(CommentReportPage.class);
             }
 
         };
-        add(commentReportPage);
+        if(!IS_ADMIN) commentReportLink.setVisible(false);
+        add(commentReportLink);
     }
 
     @Override

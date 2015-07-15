@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76570d69-18b7-4088-aaff-eb10cce1879a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/base/BasePage.java" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/base/BasePage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/form/HotelConverter.java" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/form/HotelConverter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelAdvancedSearchPage.html" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelAdvancedSearchPage.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelAdvancedSearchPage.java" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelAdvancedSearchPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelAdvancedSearchPage.utf8.properties" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelAdvancedSearchPage.utf8.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelFormPage.java" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelFormPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelListPage.html" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelListPage.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelListPage.java" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelListPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelListPage.utf8.properties" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelListPage.utf8.properties" />
     </list>
     <ignored path="HotelApp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,70 +38,42 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="HotelListPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelListPage.java">
+      <file leaf-file-name="HotelAdvancedSearchPage.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelAdvancedSearchPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1065" max-vertical-offset="1800">
-              <caret line="124" column="47" selection-start-line="124" selection-start-column="47" selection-end-line="124" selection-end-column="47" />
+            <state vertical-scroll-proportion="0.39940828" vertical-offset="1260" max-vertical-offset="3030">
+              <caret line="137" column="25" selection-start-line="137" selection-start-column="25" selection-end-line="137" selection-end-column="25" />
               <folding>
-                <element signature="e#1377#1606#0" expanded="true" />
-                <element signature="e#1605#1606#0" expanded="true" />
-                <element signature="e#4822#4828#0" expanded="true" />
+                <element signature="e#3001#3198#0" expanded="true" />
+                <element signature="e#3197#3198#0" expanded="true" />
+                <element signature="e#3276#3284#0" expanded="true" />
+                <element signature="e#3632#3641#0" expanded="true" />
+                <element signature="e#3984#3993#0" expanded="true" />
+                <element signature="e#4331#4339#0" expanded="true" />
+                <element signature="e#4841#4850#0" expanded="true" />
+                <element signature="e#4991#5000#0" expanded="true" />
+                <element signature="e#8247#8248#0" expanded="true" />
+                <element signature="e#8326#8327#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HotelConverter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/form/HotelConverter.java">
+      <file leaf-file-name="HotelAdvancedSearchPage.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelAdvancedSearchPage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="38" max-vertical-offset="480">
-              <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HibernateHotelRepo.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/domain/HibernateHotelRepo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3325792" vertical-offset="1248" max-vertical-offset="1725">
-              <caret line="116" column="17" selection-start-line="116" selection-start-column="17" selection-end-line="116" selection-end-column="17" />
+            <state vertical-scroll-proportion="-5.625" vertical-offset="30" max-vertical-offset="720">
+              <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BasePage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/base/BasePage.java">
+      <file leaf-file-name="HotelAdvancedSearchPage.utf8.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelAdvancedSearchPage.utf8.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="2670">
-              <caret line="46" column="23" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1516#1523#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HotelListPage.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelListPage.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="885">
-              <caret line="3" column="25" selection-start-line="3" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HotelListPage.utf8.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelListPage.utf8.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
-              <caret line="13" column="51" selection-start-line="13" selection-start-column="51" selection-end-line="13" selection-end-column="51" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="405">
+              <caret line="7" column="27" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -110,7 +87,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/user/ProfilePage.html" />
         <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/user/ProfilePage.utf8.properties" />
         <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/base/BasePage.utf8.properties" />
         <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/user/RequestNewPasswordPage.utf8.properties" />
@@ -123,7 +99,6 @@
         <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/user/EditProfilePage.html" />
         <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/HotelWicketSession.java" />
         <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/comment/CommentListPanel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelFormPage.html" />
         <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/DestinationDropDownChoice.java" />
         <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/comment/CommentFormPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/samples/AutoCompletePage.java" />
@@ -131,18 +106,14 @@
         <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/samples/HotelAutoCompleteTextField.java" />
         <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/samples/HotelAutoCompletePage.html" />
         <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/samples/HotelAutoCompletePage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelFormPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelFormPage.utf8.properties" />
         <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/samples/HotelAutoCompleteField.java" />
         <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelConverter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelAdvancedSearchPage.html" />
         <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelDetailPage.utf8.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelListPage.utf8.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/hotelApp.conf" />
         <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/helpers/AppConfigurationHelper.java" />
         <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/WicketApplication.java" />
         <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/DestinationPage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelAdvancedSearchPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/helpers/SendMailHelper.java" />
         <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelPhotoSliderPanel.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/pictures.css" />
@@ -153,14 +124,20 @@
         <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelDetailPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelDetailPage.html" />
         <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/common/PictureHelper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelListPage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelListPage.html" />
         <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/domain/HotelRepo.java" />
         <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/domain/HibernateHotelRepo.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/base/BasePage.html" />
         <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/form/HotelConverter.java" />
         <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/base/BasePage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelListPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelListPage.utf8.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelListPage.html" />
+        <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelFormPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelAdvancedSearchPage.utf8.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelFormPage.html" />
+        <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelAdvancedSearchPage.html" />
+        <option value="$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelAdvancedSearchPage.java" />
       </list>
     </option>
   </component>
@@ -349,40 +326,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="form" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hotelapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HotelWicketApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="paw" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="comment" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -735,7 +678,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30397728" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33238637" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33238637" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -745,7 +688,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.6066236" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23990306" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24555735" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22443181" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -788,7 +731,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="137" />
+      <option name="time" value="139" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -797,30 +740,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/com/googlecode/wicket-jquery-ui/wicket-jquery-ui-core/6.18.0/wicket-jquery-ui-core-6.18.0.jar!/com/googlecode/wicket/jquery/core/renderer/ITextRenderer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14516129" vertical-offset="0" max-vertical-offset="620">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/googlecode/wicket-jquery-ui/wicket-jquery-ui-core/6.18.0/wicket-jquery-ui-core-6.18.0.jar!/com/googlecode/wicket/jquery/core/renderer/TextRenderer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.4" vertical-offset="60" max-vertical-offset="705">
-          <caret line="48" column="130" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="130" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/src.zip!/java/util/Locale.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33284023" vertical-offset="5010" max-vertical-offset="37095">
-          <caret line="408" column="19" selection-start-line="408" selection-start-column="19" selection-end-line="408" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/wicket/wicket-extensions/6.18.0/wicket-extensions-6.18.0.jar!/org/apache/wicket/extensions/ajax/markup/html/autocomplete/AutoCompleteTextField.class">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.4" vertical-offset="0" max-vertical-offset="1305">
@@ -842,18 +761,6 @@
         <state vertical-scroll-proportion="0.3106509" vertical-offset="0" max-vertical-offset="676">
           <caret line="14" column="84" selection-start-line="14" selection-start-column="84" selection-end-line="14" selection-end-column="84" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelFormPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31213018" vertical-offset="1079" max-vertical-offset="1995">
-          <caret line="89" column="56" selection-start-line="89" selection-start-column="37" selection-end-line="89" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1094#1101#0" expanded="false" />
-            <element signature="e#1449#1462#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -894,25 +801,6 @@
         <state vertical-scroll-proportion="0.20454545" vertical-offset="0" max-vertical-offset="1740">
           <caret line="32" column="31" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelAdvancedSearchPage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09202454" vertical-offset="0" max-vertical-offset="660">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/form/DestinationDropDownChoice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3106509" vertical-offset="0" max-vertical-offset="676">
-          <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
-          <folding>
-            <element signature="e#693#694#0" expanded="true" />
-            <element signature="e#748#749#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -977,14 +865,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.19970414" vertical-offset="0" max-vertical-offset="676">
           <caret line="9" column="20" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelAdvancedSearchPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1651" max-vertical-offset="2955">
-          <caret line="157" column="87" selection-start-line="157" selection-start-column="87" selection-end-line="157" selection-end-column="87" />
           <folding />
         </state>
       </provider>
@@ -1066,18 +946,6 @@
             <element signature="e#1798#1799#0" expanded="true" />
             <element signature="e#1850#1851#0" expanded="true" />
             <element signature="e#1887#1888#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelDetailPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="554" max-vertical-offset="2745">
-          <caret line="75" column="78" selection-start-line="75" selection-start-column="61" selection-end-line="75" selection-end-column="78" />
-          <folding>
-            <element signature="e#4440#4446#0" expanded="false" />
-            <element signature="e#4716#4722#0" expanded="false" />
-            <element signature="e#4993#4999#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1175,26 +1043,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelListPage.utf8.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
-          <caret line="13" column="51" selection-start-line="13" selection-start-column="51" selection-end-line="13" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/base/BasePage.utf8.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.101809956" vertical-offset="0" max-vertical-offset="442">
           <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelListPage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="885">
-          <caret line="3" column="25" selection-start-line="3" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1206,18 +1058,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1516#1523#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelListPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1065" max-vertical-offset="1800">
-          <caret line="124" column="47" selection-start-line="124" selection-start-column="47" selection-end-line="124" selection-end-column="47" />
-          <folding>
-            <element signature="e#1377#1606#0" expanded="true" />
-            <element signature="e#1605#1606#0" expanded="true" />
-            <element signature="e#4822#4828#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1242,9 +1082,119 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/domain/HibernateHotelRepo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3325792" vertical-offset="1248" max-vertical-offset="1725">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1248" max-vertical-offset="1725">
           <caret line="116" column="17" selection-start-line="116" selection-start-column="17" selection-end-line="116" selection-end-column="17" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelListPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1283" max-vertical-offset="1800">
+          <caret line="123" column="72" selection-start-line="123" selection-start-column="72" selection-end-line="123" selection-end-column="72" />
+          <folding>
+            <element signature="e#1377#1606#0" expanded="true" />
+            <element signature="e#1605#1606#0" expanded="true" />
+            <element signature="e#4787#4793#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelListPage.utf8.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5090498" vertical-offset="0" max-vertical-offset="442">
+          <caret line="15" column="42" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelListPage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.28229666" vertical-offset="17" max-vertical-offset="915">
+          <caret line="9" column="64" selection-start-line="9" selection-start-column="64" selection-end-line="9" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/user/EditProfilePage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1380">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelDetailPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="554" max-vertical-offset="2745">
+          <caret line="79" column="79" selection-start-line="79" selection-start-column="24" selection-end-line="79" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/form/DestinationDropDownChoice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="405">
+          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+          <folding>
+            <element signature="e#693#694#0" expanded="true" />
+            <element signature="e#748#749#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelAdvancedSearchPage.utf8.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="405">
+          <caret line="7" column="27" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelFormPage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4288" vertical-offset="437" max-vertical-offset="1515">
+          <caret line="47" column="65" selection-start-line="47" selection-start-column="24" selection-end-line="47" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelAdvancedSearchPage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.625" vertical-offset="30" max-vertical-offset="720">
+          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelFormPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3325301" vertical-offset="1317" max-vertical-offset="1770">
+          <caret line="116" column="59" selection-start-line="116" selection-start-column="48" selection-end-line="116" selection-end-column="59" />
+          <folding>
+            <element signature="e#1455#1468#0" expanded="true" />
+            <element signature="e#1820#2017#0" expanded="true" />
+            <element signature="e#2016#2017#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/itba/it/paw/web/hotel/HotelAdvancedSearchPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.39940828" vertical-offset="1260" max-vertical-offset="3030">
+          <caret line="137" column="25" selection-start-line="137" selection-start-column="25" selection-end-line="137" selection-end-column="25" />
+          <folding>
+            <element signature="e#3001#3198#0" expanded="true" />
+            <element signature="e#3197#3198#0" expanded="true" />
+            <element signature="e#3276#3284#0" expanded="true" />
+            <element signature="e#3632#3641#0" expanded="true" />
+            <element signature="e#3984#3993#0" expanded="true" />
+            <element signature="e#4331#4339#0" expanded="true" />
+            <element signature="e#4841#4850#0" expanded="true" />
+            <element signature="e#4991#5000#0" expanded="true" />
+            <element signature="e#8247#8248#0" expanded="true" />
+            <element signature="e#8326#8327#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

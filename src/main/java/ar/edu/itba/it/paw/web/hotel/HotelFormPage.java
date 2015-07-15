@@ -35,7 +35,7 @@ public class HotelFormPage extends SecuredPage {
     private Integer category;
     private String type;
     private Integer price;
-    private IModel<Destination> destinationModel = new EntityModel<Destination>(Destination.class);
+    private final IModel<Destination> destinationModel = new EntityModel<Destination>(Destination.class);
     private String address;
     private String phone;
     private String website;

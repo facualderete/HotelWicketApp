@@ -6,10 +6,10 @@
         <select wicket:id="starsFromDropDownChoice"></select>
         <select wicket:id="starsToDropDownChoice"></select>
         <select wicket:id="breakfastDropDownChoice"></select>
+        <select wicket:id="destination"></select>
         <input type="text" wicket:id="hotelNameSearchField" />
-        <input type="text" wicket:id="citySearchField" />
-        <input type="text" wicket:id="priceFromField" />
-        <input type="text" wicket:id="priceToField" />
+        <input type="number" wicket:id="priceFromField" />
+        <input type="number" wicket:id="priceToField" />
         <button wicket:id="submit" type="submit" class="btn btn-primary">
             <wicket:message key="submit">Submit</wicket:message>
         </button>
@@ -21,17 +21,21 @@
             <thead>
             <tr>
                 <th wicket:message key="name">Nombre</th>
-                <th wicket:message key="category">Categoría</th>
                 <th wicket:message key="destination">Ciudad</th>
-                <th wicket:message key="comments">Comentarios</th>
+                <th wicket:message key="category">Categoría</th>
+                <th wicket:message key="price">Precio</th>
+                <th wicket:message key="type">Tipo</th>
+                <th wicket:message key="breakfast">Desayuno</th>
             </tr>
             </thead>
             <tbody>
             <tr wicket:id="hotelsList">
                 <td><a href="#" wicket:id="hotelDetailLink"><span wicket:id="hotelName"></span></a></td>
-                <td><span wicket:id="category"></span></td>
                 <td><span wicket:id="destination"></span></td>
-                <td><span wicket:id="comments"></span></td>
+                <td><span wicket:id="category"></span></td>
+                <td><span wicket:id="price"></span></td>
+                <td><span wicket:id="type"></span></td>
+                <td><span wicket:id="breakfast"></span></td>
             </tr>
             </tbody>
         </table>
