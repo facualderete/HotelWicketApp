@@ -46,8 +46,6 @@ public class BasePage extends WebPage {
     @SuppressWarnings("serial")
     public BasePage() {
 
-    	
-    	
         HotelWicketSession session = HotelWicketSession.get();
         if (session.isSignedIn()) {
             userModel.setObject(session.getUser());
@@ -133,7 +131,7 @@ public class BasePage extends WebPage {
         if(hotelModel.getObject() == null) {
             outstandingLink.setVisible(false);
         } else {
-            outstandinglabel = new Label("outstandingHotelName", hotelModel.getObject().getName());
+            outstandinglabel = new Label("outstandingHotelName", getDecoratedHotelName(hotelModel.getObject()));
         }
         outstandingLink.add(outstandingHotelPicture);
         outstandingLink.add(outstandinglabel);

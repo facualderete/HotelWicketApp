@@ -3,17 +3,15 @@ package ar.edu.itba.it.paw.web.hotel.form;
 import ar.edu.itba.it.paw.domain.Hotel;
 import ar.edu.itba.it.paw.domain.HotelRepo;
 import org.apache.wicket.injection.Injector;
+import org.apache.wicket.spring.injection.annot.SpringBean;
 import org.apache.wicket.util.convert.ConversionException;
 import org.apache.wicket.util.convert.IConverter;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 
 import java.util.Locale;
 
-@Component
 public class HotelConverter implements IConverter<Hotel> {
 
-    @Autowired
+    @SpringBean
     HotelRepo hotelRepo;
 
     @Override
